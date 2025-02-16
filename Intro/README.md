@@ -14,12 +14,11 @@ https://www.snort.org/
  ▪ Unix: ss -nltp, netstat –tulpn
 
 # JWT Token Vulnerability
-## JWT's secret could be brute-forced like that
-
+```sh
 flask-unsign -u -c .XXXXXXXXX -nE -w /usr/share/wordlists/rockyou.txt
 flask-unsign -s --secret "secret123" --cookie "{'loggin': True, 'username': 'blue'}" -l
-
 sudo -l
+```
 
 ## How to Search for Vulnerabilities?
 ExploitDB
@@ -28,9 +27,10 @@ https://www.exploit-db.com/
 
 ## Drupal7  (Versions 7.0 to 7.31 are vulnerable to SQL Injection)
 
--> smsf6 exploit(multi/http/drupal_drupageddon) > show options
--> msf6 exploit(multi/http/drupal_drupageddon) > exploit
-
+```sh
+smsf6 exploit(multi/http/drupal_drupageddon) > show options
+msf6 exploit(multi/http/drupal_drupageddon) > exploit
+```
 ## How to Prevent Obsolete Software Vulnerabilities?
 
 ▪ Updates are not just for new functionalities, most of them are designed for fixing security problems –ALWAYS BE UPDATED!   <br />
@@ -43,28 +43,29 @@ https://www.exploit-db.com/
 
 Let's see more: 
 
-▪ https://hashcat.net/wiki/doku.php?id=example_hashes
-▪ https://crackstation.net
+▪ https://hashcat.net/wiki/doku.php?id=example_hashes <br />
+▪ https://crackstation.net <br />
 
-## Get hash with Responder 
-https://github.com/SpiderLabs/Responder
+## Get hash with Responder  <br /> 
+https://github.com/SpiderLabs/Responder <br />
 
 
-# Zero Days Marketplace (There is a database and a marketplace for that)
+# Zero Days Marketplace (There is a database and a marketplace for that) <br />
 https://0day.today
 
-# Using Folina
-python3 follina.py -r 9999
-https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
+# Using Folina 
+```sh
+python3 follina.py -r 9999 <br />
+```
+More Details at: https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 
-▪ Log4j used for logging utility based on Java
 
 ## More Databases for Vulnerabilities:
 
- ▪https://www.cve.org/
- ▪https://www.exploit-db.com/
- ▪https://nvd.nist.gov/
- ▪https://www.cvedetails.com
+ ▪https://www.cve.org/ <br />
+ ▪https://www.exploit-db.com/ <br />
+ ▪https://nvd.nist.gov/ <br />
+ ▪https://www.cvedetails.com <br />
 
 # Frameworks to Perform Wi-Fi Attacks
 
@@ -73,10 +74,10 @@ https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 ▪ WiFiExploitation Framework (https://github.com/D3Ext/WEF)   <br />
  
 python listener.py
- ▪Source: https://www.youtube.com/watch?v=A8DkVDQW1-w
+▪ Source: https://www.youtube.com/watch?v=A8DkVDQW1-w
 
-Technical Side of Phishing Attacks is Scary Easy to Replicate
-https://github.com/trustedsec/social-engineer-toolkit
+Technical Side of Phishing Attacks is Scary Easy to Replicate <br />
+**More details at:** https://github.com/trustedsec/social-engineer-toolkit
 
 sudo setoolkit
 
@@ -136,19 +137,21 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 QRadar SIEM Demo
 
 ▪ Enumerating Reverse Shells
+```sh
 ps -aef --forest
+```
 
  ▪Analyzing Sliver C2 HTTP Beacon with Wireshark:
 
 # Penetration Testing Operational Systems (OS)
- ▪Kali Linux (https://www.kali.org)   <br />
- ▪Parrot OS (https://www.parrotsec.org)  <br />
- ▪Black Arch (https://blackarch.org)   <br />
- ▪CommandoVM(https://github.com/mandiant/commando-vm)   <br />
- ▪Nessus (https://www.tenable.com/products/nessus)   <br />
- ▪Nmap (https://nmap.org)   <br />
- ▪BurpSuite(https://portswigger.net/burp)   <br />
- ▪Searchsploit(https://www.exploit-db.com/searchsploit)   <br />
+▪ Kali Linux (https://www.kali.org)   <br />
+▪ Parrot OS (https://www.parrotsec.org)  <br />
+▪ Black Arch (https://blackarch.org)   <br />
+▪ CommandoVM(https://github.com/mandiant/commando-vm)   <br />
+▪ Nessus (https://www.tenable.com/products/nessus)   <br />
+▪ Nmap (https://nmap.org)   <br />
+▪ BurpSuite(https://portswigger.net/burp)   <br />
+▪ Searchsploit(https://www.exploit-db.com/searchsploit)   <br />
 
 ## Scanning local system for *privilege escalation* attack vectors with linpeas
 https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
@@ -156,13 +159,15 @@ https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
 ▪ On github: https://github.com/juliocesarfort/public-pentesting-reports   <br />
 
 TryHackMe: https://tryhackme.com/   <br />
- ▪Vulnhub: https://www.vulnhub.com/   <br />
- ▪HackTheBox: https://www.hackthebox.com/   <br />
+▪ Vulnhub: https://www.vulnhub.com/   <br />
+▪ HackTheBox: https://www.hackthebox.com/   <br />
 
 Use ATT&CK Navigator (https://mitre-attack.github.io/attack-navigator/)to map a sample TTP   <br />
 
 USING KALI LINUX with Seclists and Run:   <br />
- ▪ cd /opt/   <br />
- ▪ sudo git clone https://github.com/danielmiessler/SecLists"   <br /> 
- ▪ cd /usr/share/wordlists   <br />
- ▪ sudo gzip–d rockyou.txt.gz   <br />
+```sh
+cd /opt/
+sudo git clone https://github.com/danielmiessler/SecLists" 
+cd /usr/share/wordlists
+sudo gzip–d rockyou.txt.gz
+```
