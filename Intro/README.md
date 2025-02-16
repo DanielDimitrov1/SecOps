@@ -11,11 +11,11 @@ hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
 ## How to Check What Ports are Opened on Your PC?
 ▪ **Windows:** 
 ```sh
-netstat –an, netstat –antb <br />
+netstat –an, netstat –antb
 ```
 ▪ **Unix:** 
 ```sh
-ss -nltp, netstat –tulpn <br />
+ss -nltp, netstat –tulpn
 ```
 
 # JWT Token Vulnerability
@@ -45,15 +45,15 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 
 **Using hydra:** https://github.com/vanhauser-thc/thc-hydra
 
-**More details at:** 
+**More details at:** <br />
 ▪ https://hashcat.net/wiki/doku.php?id=example_hashes <br />
 ▪ https://crackstation.net <br />
 
 ## Get hash with Responder  <br /> 
-▪ https://github.com/SpiderLabs/Responder <br />
+**More details at:** https://github.com/SpiderLabs/Responder <br />
 
 ## Zero Days Marketplace (There is a database and a marketplace for that) <br />
-https://0day.today
+**More details at:** https://0day.today
 
 ## Using Folina 
 ```sh
@@ -70,9 +70,9 @@ python3 follina.py -r 9999
 
 # Frameworks to Perform Wi-Fi Attacks
 
-▪ Airgeddon: https://github.com/v1s1t0r1sh3r3/airgeddon   <br />
-▪ WiFiPhisher: https://github.com/wifiphisher/wifiphisher   <br />
-▪ WiFiExploitation Framework: https://github.com/D3Ext/WEF   <br />
+▪ **Airgeddon:** https://github.com/v1s1t0r1sh3r3/airgeddon   <br />
+▪ **WiFiPhisher:** https://github.com/wifiphisher/wifiphisher   <br />
+▪ **WiFiExploitation Framework:** https://github.com/D3Ext/WEF   <br />
 
 ```sh 
 python listener.py
@@ -80,7 +80,7 @@ python listener.py
 
 **More details at:**: https://www.youtube.com/watch?v=A8DkVDQW1-w
 
-Technical Side of Phishing Attacks is Scary Easy to Replicate <br />
+*Technical Side of Phishing Attacks is Scary Easy to Replicate* <br />
 
 **More details at:** https://github.com/trustedsec/social-engineer-toolkit
 
@@ -128,14 +128,13 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ▪ **Medusa:** https://github.com/jmk-foofus/medusa   <br />
 
 # Security Information and Event Management - SIEM for Securty analysis
-QRadar SIEM Demo
 
-▪ Enumerating Reverse Shells
+**Enumerating Reverse Shells**
 ```sh
 ps -aef --forest
 ```
 
-▪ Analyzing Sliver C2 HTTP Beacon with Wireshark:
+The most commonly used software is **Sliver C2 HTTP Beacon** with **Wireshark**
 
 # Penetration Testing Operational Systems (OS)
 ▪ **Kali Linux:** https://www.kali.org   <br />
@@ -147,7 +146,7 @@ ps -aef --forest
 ▪ **BurpSuite:** https://portswigger.net/burp   <br />
 ▪ **Searchsploit:** https://www.exploit-db.com/searchsploit   <br />
 
-## Scanning local system for *privilege escalation* attack vectors with linpeas
+## Scanning local system for ***privilege escalation*** attack vectors with linpeas
 
 **More details at:** https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
 
@@ -157,13 +156,13 @@ ps -aef --forest
 ▪ **Vulnhub:** https://www.vulnhub.com/   <br />
 ▪ **HackTheBox:** https://www.hackthebox.com/   <br />
 
-Use ATT&CK Navigator: <br />
+**Use ATT&CK Navigator:** <br />
 https://mitre-attack.github.io/attack-navigator/ to map a sample TTP   <br />
 
 ***USING KALI LINUX with Seclists and Run:***   <br />
 ```sh
 cd /opt/
-sudo git clone https://github.com/danielmiessler/SecLists" 
+sudo git clone https://github.com/danielmiessler/SecLists
 cd /usr/share/wordlists
 sudo gzip–d rockyou.txt.gz
 ```
