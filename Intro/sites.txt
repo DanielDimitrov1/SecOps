@@ -1,0 +1,21 @@
+# Frameworks for Recording Threat Actions
+https://attack.mitre.org/
+
+# Exploitation is someone brute-forcing it with hydra
+hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
+
+
+# Intrusion Prevention System (IPS) is security system for catching and preventing security threats.
+ ▪ It works on predefined security rules, just like IP
+
+https://www.snort.org/
+
+# How to Check What Ports are Opened on Your PC?
+ ▪Windows: netstat –an, netstat –antb
+ ▪ Unix: ss -nltp, netstat –tulpn
+
+
+
+# JWT's secret could be brute-forced like that
+
+flask-unsign -u -c .XXXXXXXXX -nE -w /usr/share/wordlists/rockyou.txt
