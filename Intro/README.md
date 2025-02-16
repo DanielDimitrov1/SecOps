@@ -55,7 +55,7 @@ https://0day.today
 
 # Using Folina 
 ```sh
-python3 follina.py -r 9999 <br />
+python3 follina.py -r 9999
 ```
 More Details at: https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
 
