@@ -1,5 +1,5 @@
 ***This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.***  <br />
-## I always had full permissions to conduct tests and scanning, ensuring that I did not perform any forbidden actions.  <br />
+***I always had full permissions to conduct tests and scanning, ensuring that I did not perform any forbidden actions.***  <br />
 
 
 # Passive reconnaissance <br />
@@ -99,11 +99,10 @@ Allows unauthorized access to restricted resources.  <br />
 Enables attackers to upload malicious files for remote execution.  <br />
 - Lab: [File Upload RCE](https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload)  <br />
 
----  <br />
 ## Privilege Escalation  <br />
 - **LinPEAS** – [Privilege escalation auditing script](https://linpeas.sh/).  <br />
 - **GTFOBins** – [List of Unix binaries that allow privilege escalation](https://gtfobins.github.io/).  <br />
 
----  <br />
+
 ## Metasploit  <br />
 [Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
