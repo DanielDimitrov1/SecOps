@@ -1,4 +1,5 @@
 ***This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.***  <br />
+
 ***I always had full permissions to conduct tests and scanning on the projects and environments that I had worked, ensuring that I did not perform any forbidden actions.***  <br />
 
 
