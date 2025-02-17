@@ -10,15 +10,6 @@ This guide provides an overview of reconnaissance techniques and tools used for 
 ▪ **Scanning DNS**  (Identifying domain records and subdomains); <br />
 ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
-# Active reconnaissance** <br />
-
-Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
-
-## Common Active Reconnaissance Techniques: <br />
-
-▪ **Port scan** – Identifying open ports and services (e.g., **nmap, masscan** );  <br />
-▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., **Nessus, BurpSuite**);  <br />
-▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., **Gobuster, Dirb**);  <br />
 
 # Passive Reconnaissance Tools <br />
 
@@ -35,6 +26,19 @@ sudo ./discover.sh
 
 2. **Maltego** https://www.maltego.com/ - is a powerful data collection tool supporting both passive and active reconnaissance  <br />
 3. **OSINT Framework** https://osintframework.com/ - provides an extensive list of tools for open-source intelligence gathering <br />
+
+
+
+##############
+# Active reconnaissance <br />
+
+Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
+
+## Common Active Reconnaissance Techniques: <br />
+
+▪ **Port scan** – Identifying open ports and services (e.g., **nmap, masscan** );  <br />
+▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., **Nessus, BurpSuite**);  <br />
+▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., **Gobuster, Dirb**);  <br />
 
 
 # Active Reconnaissance Techniques 
@@ -103,6 +107,3 @@ Enables attackers to upload malicious files for remote execution.  <br />
 ---  <br />
 ## Metasploit  <br />
 [Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
-
----  <br />
-This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research. Always ensure ethical and legal compliance when using these methods.  <br />
