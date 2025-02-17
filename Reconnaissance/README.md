@@ -2,8 +2,8 @@
 
 ## Common Passive Reconnaissance Techniques: <br />
 
-    ▪ **Scanning DNS (Identifying domain records and subdomains);**  <br />
-    ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
+**Scanning DNS (Identifying domain records and subdomains);**  <br />
+**Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
 **Active reconnaissance** <br />
 
@@ -11,9 +11,9 @@ Active reconnaissance involves direct interaction with the target to gather info
 
 ## Common Active Reconnaissance Techniques: <br />
 
-    ▪ **Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
-    ▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
-    ▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., Gobuster, Dirb);  <br />
+**Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
+**Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
+**Directory brute-forcing** – Enumerating hidden files and directories (e.g., Gobuster, Dirb);  <br />
 
 # Passive Reconnaissance Tools <br />
 
