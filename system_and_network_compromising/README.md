@@ -48,7 +48,7 @@ python torshammer.py -t 192.168.1.100 -r 100000 -T
 
 # **Network Reconnaissance**
 
-## ** Nmap**
+## Nmap
 [Nmap Cheat Sheet](https://www.stationx.net/nmap-cheat-sheet/)
 ```sh
 nmap -p 80 --script http-generator.nse
@@ -56,7 +56,7 @@ nmap -p 443 --script=http-headers,http-title,http-generator
 nmap --script="default and http-*"
 ```
 
-## ** Masscan**
+## Masscan
 [Masscan Cheat Sheet](https://cheatsheet.haax.fr/network/port-scanning/masscan_cheatsheet/)
 ```sh
 masscan -p80,443,8080,8443,81,4444,4443,8888 70.176.0.0/16
