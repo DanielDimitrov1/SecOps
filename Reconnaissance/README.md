@@ -1,8 +1,8 @@
-This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research. 
-**I always had full permissions to conduct tests and scanning, ensuring that I did not perform any forbidden actions.**  <br />
+This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.  <br />
+## I always had full permissions to conduct tests and scanning, ensuring that I did not perform any forbidden actions.  <br />
 
 
-# Passuve reconnaissance <br />
+# Passive reconnaissance <br />
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
 
 ## Common Passive Reconnaissance Techniques: <br />
@@ -10,7 +10,7 @@ This guide provides an overview of reconnaissance techniques and tools used for 
 ▪ **Scanning DNS**  (Identifying domain records and subdomains); <br />
 ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
-**Active reconnaissance** <br />
+# Active reconnaissance** <br />
 
 Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
 
