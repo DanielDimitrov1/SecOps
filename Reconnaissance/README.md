@@ -60,34 +60,44 @@ While some tools like **Maltego** and **Discover** support both passive and acti
 [BurpSuite](https://portswigger.net/burp) is a web security testing tool that acts as an HTTP proxy, allowing interception and modification of web traffic.  <br />
 
 ---  <br />
+---  <br />
+## Analyzing Vulnerabilities  <br />
 
-# Analyzing Vulnerabilities
+### 1. SQL Injection  <br />
+Allows attackers to manipulate database queries.  <br />
+- Lab: [PortSwigger SQL Injection](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)  <br />
 
-**1. SQL Injection**  - allows user to enter within the database engine, corrupting and modifying queries  <br />
-    Lab: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data   <br />
-**2. XSS**  - allows user to inject and execute custom javascript  <br />
-    A simple js payload to fuzz all potential parameters and fields: "<script>alert(‘1’);</script>"  <br /> 
-    More details at: https://github.com/payloadbox/xss-payload-list <br /> 
-    Lab: https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  <br />
-**3. OS Command Injection** - allows user to inject custom OS commands  <br />
-    More details at: https://github.com/payloadbox/command-injection-payload-list  <br />
-    Lab: https://portswigger.net/web-security/os-command-injection/lab-simple  <br />
-**4. Directory Traversal**  - allows user to read local files stored on the operational system (OS)  <br />
-    Lab: https://portswigger.net/web-security/file-path-traversal/lab-simple   <br />
-**5.  Access Control Vulnerabilities** - user to access and work with resources, by bypassing access control restrictions  <br />
-    Lab: https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality   <br />
-**6. File Upload Vulnerabilities** - allows an attacker to upload and execute unknown files and executing C2  <br />
-    Lab: https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload  <br />
+### 2. Cross-Site Scripting (XSS)  <br />
+Enables the execution of arbitrary JavaScript in a victim’s browser.  <br />
+- Simple payload: `<script>alert(‘1’);</script>`  <br />
+- Lab: [XSS Vulnerability](https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded)  <br />
+- More details: [XSS Payload List](https://github.com/payloadbox/xss-payload-list)  <br />
 
+### 3. OS Command Injection  <br />
+Allows attackers to execute arbitrary system commands.  <br />
+- More details: [Command Injection Payloads](https://github.com/payloadbox/command-injection-payload-list)  <br />
+- Lab: [OS Command Injection](https://portswigger.net/web-security/os-command-injection/lab-simple)  <br />
 
-USEFUL SOLUTIONS:
+### 4. Directory Traversal  <br />
+Grants unauthorized access to local files on a system.  <br />
+- Lab: [Path Traversal](https://portswigger.net/web-security/file-path-traversal/lab-simple)  <br />
 
+### 5. Access Control Vulnerabilities  <br />
+Allows unauthorized access to restricted resources.  <br />
+- Lab: [Bypassing Access Controls](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality)  <br />
 
-# Privilege Escalation
+### 6. File Upload Vulnerabilities  <br />
+Enables attackers to upload malicious files for remote execution.  <br />
+- Lab: [File Upload RCE](https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload)  <br />
 
-▪ **Linpeas.sh** https://linpeas.sh/  <br />
-▪ **GTFObins** https://gtfobins.github.io/  (You can find such binaries misconfigured to allow privilege escalation)  <br />
+---  <br />
+## Privilege Escalation  <br />
+- **LinPEAS** – [Privilege escalation auditing script](https://linpeas.sh/).  <br />
+- **GTFOBins** – [List of Unix binaries that allow privilege escalation](https://gtfobins.github.io/).  <br />
 
-# Metasploit
+---  <br />
+## Metasploit  <br />
+[Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
 
-https://www.metasploit.com/ 
+---  <br />
+This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research. Always ensure ethical and legal compliance when using these methods.  <br />
