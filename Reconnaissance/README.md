@@ -1,3 +1,8 @@
+This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research. 
+**I always had full permissions to conduct tests and scanning, ensuring that I did not perform any forbidden actions.**  <br />
+
+
+# Passuve reconnaissance <br />
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
 
 ## Common Passive Reconnaissance Techniques: <br />
