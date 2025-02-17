@@ -45,12 +45,14 @@ nmap --script="default and http-*"
 
 ##  Network Reconnaissance with Masscan
 [Cheatsheet Masscan/](https://cheatsheet.haax.fr/network/port-scanning/masscan_cheatsheet/)
-
+```sh
 masscan -p80,443,8080,8443,81,4444,4443,8888 70.176.0.0/16
-
-###  Network Reconnaissance with Netdiscover
-
+```
+##  Network Reconnaissance with Netdiscover
+```sh
 netdiscover
-
-### Network Reconnaissance with Bettercap
+```
+## Network Reconnaissance with Bettercap
+```sh
 sudo bettercap
+```
