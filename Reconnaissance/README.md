@@ -2,7 +2,7 @@
 
 ## Common Passive Reconnaissance Techniques: <br />
 
-▪ **Scanning DNS (Identifying domain records and subdomains);**  <br />
+▪ **Scanning DNS**  (Identifying domain records and subdomains); <br />
 ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
 **Active reconnaissance** <br />
@@ -11,9 +11,9 @@ Active reconnaissance involves direct interaction with the target to gather info
 
 ## Common Active Reconnaissance Techniques: <br />
 
-▪ **Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
-▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
-▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., Gobuster, Dirb);  <br />
+▪ **Port scan** – Identifying open ports and services (e.g., **nmap, masscan** );  <br />
+▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., **Nessus, BurpSuite**);  <br />
+▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., **Gobuster, Dirb**);  <br />
 
 # Passive Reconnaissance Tools <br />
 
@@ -44,16 +44,22 @@ While some tools like **Maltego** and **Discover** support both passive and acti
 ▪ **Nikto** – Web vulnerability scanner for identifying misconfigurations and security flaws;  <br />
 ▪ **Gobuster / dirb** – Brute-force enumeration tools for discovering hidden directories and files;  <br />
 
+---  <br />
+## Vulnerability Discovery Tools and Techniques  <br />
 
-# Vulnerability Discovery Tools and Techniques 
+### 1. Nessus  <br />
+[Nessus](https://www.tenable.com/products/nessus) is widely used for vulnerability assessments, particularly in infrastructure security.  <br />
 
-https://hacktricks.boitatech.com.br/pentesting/pentesting-web 
+### 2. SearchSploit / Exploit-DB  <br />
+[Exploit-DB](https://www.exploit-db.com/) enables users to search for known vulnerabilities in outdated services.  <br />
 
- ▪ **Nessus** - for infrastructure scope;  <br />
- ▪ **Searchsploit / Exploitdb** suitable for searching if a service is running at older version;  <br />
- ▪ **SQLmap** - automatic SQL injection discovery and exploitation, **supports Burp Requests** https://github.com/sqlmapproject/sqlmap  <br /> 
- ▪ **BurpSuite** - discovering and exploiting web vulnerabilities, works as a http proxy, meaning it can capture requests and responses.  <br />
+### 3. SQLmap  <br />
+[SQLmap](https://github.com/sqlmapproject/sqlmap) automates SQL injection discovery and exploitation. It supports direct integration with BurpSuite for testing HTTP requests.  <br />
 
+### 4. BurpSuite  <br />
+[BurpSuite](https://portswigger.net/burp) is a web security testing tool that acts as an HTTP proxy, allowing interception and modification of web traffic.  <br />
+
+---  <br />
 
 # Analyzing Vulnerabilities
 
