@@ -108,25 +108,25 @@ Enables attackers to upload malicious files for remote execution.  <br />
 
 I enabled the protection and configured all the headers in CloudFront. Below is the description for every single header that I was working on and its benefits.  <br />
 **<ins>1. Strict-Transport-Security enforces HTTPS-only connections:</ins>**  <br />
-	•	Thwarts Man-in-the-Middle Attacks: Enforces encryption;  <br />
-	•	Secures Subdomains: Protects the whole domain ecosystem;  <br />
-	•	Preloaded by Browsers: Strengthens HTTPS adoption globally.  <br />
+***•	Thwarts Man-in-the-Middle Attacks:*** Enforces encryption;  <br />
+***•	Secures Subdomains:*** Protects the whole domain ecosystem;  <br />
+***•	Preloaded by Browsers:*** Strengthens HTTPS adoption globally.  <br />
  
 **<ins>2. X-Content-Type-Options:</ins>**  <br />
-	•	Prevents Cross-Site Scripting (XSS): Blocks malicious files disguised as safe content;  <br />
-	•	Improves Security: Stops execution of unintended file types, especially JavaScript;  <br />
-	•	Standards Compliance: Ensures that browsers respect the server’s declared file type.  <br />
+***•	Prevents Cross-Site Scripting (XSS):*** Blocks malicious files disguised as safe content;  <br />
+***•	Improves Security:*** Stops execution of unintended file types, especially JavaScript;  <br />
+***•	Standards Compliance:*** Ensures that browsers respect the server’s declared file type.  <br />
      This implies that the server explicitly overrides default behavior, ensuring the policy applies regardless of user agent or intermediate proxies. <br />
  
 **<ins>3. X-Frame-Options Policy:</ins>**  <br />
-	•	Prevents Clickjacking Attacks: Blocks malicious sites from embedding your content in invisible frames to trick users into interacting with it;  <br />
-	•	Restricts Framing to Trusted Sources: Ensures only same-origin contexts can embed your pages, maintaining content control;  <br />
-	•	Improves Security: Mitigates risks of unauthorized framing that could be used to exploit user interactions.  <br />
+***•	Prevents Clickjacking Attacks:*** Blocks malicious sites from embedding your content in invisible frames to trick users into interacting with it;  <br />
+***•	Restricts Framing to Trusted Sources:*** Ensures only same-origin contexts can embed your pages, maintaining content control;  <br />
+***•	Improves Security:*** Mitigates risks of unauthorized framing that could be used to exploit user interactions.  <br />
  
 **<ins>4.X-XSS-Protection Policy:</ins>** <br />
 ***•	Protects Against XSS Attacks:*** Blocks malicious scripts that could compromise user data or site functionality.  <br />
-*** •	Prevents Content Rendering:*** Stops pages with detected XSS payloads from being displayed.  <br />
-***	•	Simple Implementation:*** Easy way to add an extra layer of defense for older browsers.  <br />
+***•	Prevents Content Rendering:*** Stops pages with detected XSS payloads from being displayed.  <br />
+***•	Simple Implementation:*** Easy way to add an extra layer of defense for older browsers.  <br />
  
 **<ins>5. Referrer-Policy: no-referrer:</ins>**  <br />
 Ensures that the policy is strictly applied, overriding defaults or intermediary settings that might otherwise allow referrer information to leak.  <br />
