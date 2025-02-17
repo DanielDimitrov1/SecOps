@@ -47,13 +47,14 @@ Active reconnaissance involves direct interaction with the target to gather info
 
 
 # Active Reconnaissance Tools
-While some tools like **Maltego** and **Discover** support both passive and active reconnaissance, additional specialized tools include: <br />
-▪ **Nmap;**  - – Network discovery and security auditing; <br />
-▪ **Netcat (nc);** – Simple yet powerful networking utility for service enumeration <br />
+While some tools like **Maltego** and **Discover** support both passive and active reconnaissance, there are additional specialized tools for active reconnaissance: <br />
+▪ **Nmap**  - – Network discovery and security auditing; <br />
+▪ **Netcat (nc)** – Simple yet powerful networking utility for service enumeration <br />
 ▪ **Nikto** – Web vulnerability scanner for identifying misconfigurations and security flaws;  <br />
 ▪ **Gobuster / dirb** – Brute-force enumeration tools for discovering hidden directories and files;  <br />
 
----  <br />
+
+
 ## Vulnerability Discovery Tools and Techniques  <br />
 
 ### 1. Nessus  <br />
@@ -68,8 +69,7 @@ While some tools like **Maltego** and **Discover** support both passive and acti
 ### 4. BurpSuite  <br />
 [BurpSuite](https://portswigger.net/burp) is a web security testing tool that acts as an HTTP proxy, allowing interception and modification of web traffic.  <br />
 
- <br />
-  <br />
+
 ## Analyzing Vulnerabilities  <br />
 
 ### 1. SQL Injection  <br />
