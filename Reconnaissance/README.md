@@ -1,4 +1,4 @@
-***This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.***  <br />
+***This repo is a very highlight collection of tools, techniques, and scanners I've used in my projects to improve security. It covers network reconnaissance, penetration testing, and security assessments. Use these tools responsibly and within legal boundaries.*** <br />
 
 ***Below are my security-related configuration settings for AWS CloudFront.***
 
@@ -130,14 +130,14 @@ I enabled the protection and configured all the headers in CloudFront. Below is 
 **<ins>5. Referrer-Policy: no-referrer:</ins>**  <br />
 Ensures that the policy is strictly applied, overriding defaults or intermediary settings that might otherwise allow referrer information to leak.  <br />
 ***• Maximized Privacy:*** Prevents sensitive information (e.g., URLs with tokens or user-specific data) from being shared with third-party sites;  <br />
-• ***Enhanced Security:*** Avoids exposing site structure or user navigation details to potentially malicious or untrusted endpoints;  <br />
-• ***Simplicity:*** Eliminates potential misconfiguration issues by refusing to send any referrer data. <br />
+***• Enhanced Security:*** Avoids exposing site structure or user navigation details to potentially malicious or untrusted endpoints;  <br />
+***• Simplicity:*** Eliminates potential misconfiguration issues by refusing to send any referrer data. <br />
 This policy is suitable for sites prioritizing user privacy and security, such as banking or healthcare portals.  <br />
  
 **<ins>6. Content-Security-Policy (CSP):</ins>**  <br /> 
-• ***Clickjacking Protection:*** By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
-• ***Controlled Script Loading:*** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
-• ***Enhanced Security:*** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
+***• Clickjacking Protection:*** By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
+***• Controlled Script Loading:*** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
+***• Enhanced Security:*** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
 
 ## By implementing these configurations, I have successfully improved the overall scanning score from 'F' to 'A'.
 
