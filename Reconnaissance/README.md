@@ -41,10 +41,6 @@ Active reconnaissance involves direct interaction with the target to gather info
 ▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., **Gobuster, Dirb**);  <br />
 
 
-# Active Reconnaissance Techniques 
-▪ **Port Scanning;**  <br />
-▪ **Service Enumeration** (can be done with nc or specific services like BurpSuite);  <br />
-
 
 # Active Reconnaissance Tools
 While some tools like **Maltego** and **Discover** support both passive and active reconnaissance, there are additional specialized tools for active reconnaissance: <br />
