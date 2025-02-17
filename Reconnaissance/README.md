@@ -136,8 +136,8 @@ Ensures that the policy is strictly applied, overriding defaults or intermediary
 This policy is suitable for sites prioritizing user privacy and security, such as banking or healthcare portals.  <br />
  
 **6. Content-Security-Policy (CSP):**  <br /> 
-	•	Clickjacking Protection: By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
-	•	Controlled Script Loading: The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
-	•	Enhanced Security: With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
+• **Clickjacking Protection:** By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
+• **Controlled Script Loading:** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
+• **Enhanced Security:** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
 
 **You can find more about it in the ***cloudfront_security_headers_policy.tf*** file within this repo.**
