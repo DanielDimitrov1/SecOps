@@ -141,9 +141,10 @@ This policy is suitable for sites prioritizing user privacy and security, such a
 
 ## By implementing these configurations, I have successfully improved the overall scanning score from 'F' to 'A'.
 
-![alt text](image-1.png)
+From this:
+![alt text](grade'F'.jpg)
 
+up to this:
 
-![alt text](image-2.png)
-
+![alt text](grade'A'.jpg)
 **You can find more about it in the [cloudfront_security_headers_policy.tf](cloudfront_security_headers_policy.tf) file within this repo.**
