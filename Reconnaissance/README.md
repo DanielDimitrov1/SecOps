@@ -128,16 +128,16 @@ I enabled the protection and configured all the headers in CloudFront. Below is 
 	•	Prevents Content Rendering: Stops pages with detected XSS payloads from being displayed.  <br />
 	•	Simple Implementation: Easy way to add an extra layer of defense for older browsers.  <br />
  
-**5. Referrer-Policy: no-referrer:**  <br />
+**<ins>5. Referrer-Policy: no-referrer:</ins>**  <br />
 Ensures that the policy is strictly applied, overriding defaults or intermediary settings that might otherwise allow referrer information to leak.  <br />
 	•	Maximized Privacy: Prevents sensitive information (e.g., URLs with tokens or user-specific data) from being shared with third-party sites;  <br />
 	•	Enhanced Security: Avoids exposing site structure or user navigation details to potentially malicious or untrusted endpoints;  <br />
 	•	Simplicity: Eliminates potential misconfiguration issues by refusing to send any referrer data. <br />
 This policy is suitable for sites prioritizing user privacy and security, such as banking or healthcare portals.  <br />
  
-**6. Content-Security-Policy (CSP):**  <br /> 
+**<ins>6. Content-Security-Policy (CSP):</ins>**  <br /> 
 • ***Clickjacking Protection:*** By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
-• **<u>Controlled Script Loading:</u>** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
-• **<ins>Enhanced Security:</ins>** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
+• ***Controlled Script Loading:*** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
+• ***Enhanced Security:*** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
 
 **You can find more about it in the ***cloudfront_security_headers_policy.tf*** file within this repo.**
