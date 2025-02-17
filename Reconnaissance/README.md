@@ -1,5 +1,6 @@
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
-## Common Passive Reconnaissance Techniques:
+
+## Common Passive Reconnaissance Techniques: <br />
 
     ▪ **Scanning DNS (Identifying domain records and subdomains);**  <br />
     ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
@@ -8,7 +9,7 @@
 
 Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
 
-## Common Active Reconnaissance Techniques:
+## Common Active Reconnaissance Techniques: <br />
 
     ▪ **Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
     ▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
@@ -18,7 +19,7 @@ Active reconnaissance involves direct interaction with the target to gather info
 
 1. **Discover** is a collection of reconnaissance tools requiring API keys for full functionality.
 https://github.com/leebaird/discover <br />
-
+ 
 ### Installing and Running Discover
 
 ```sh
