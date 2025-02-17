@@ -29,7 +29,6 @@ sudo ./discover.sh
 
 
 
-##############
 # Active reconnaissance <br />
 
 Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
@@ -140,4 +139,5 @@ This policy is suitable for sites prioritizing user privacy and security, such a
 • ***Controlled Script Loading:*** The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
 • ***Enhanced Security:*** With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
 
+![alt text](image.png)
 **You can find more about it in the [cloudfront_security_headers_policy.tf](cloudfront_security_headers_policy.tf) file within this repo.**
