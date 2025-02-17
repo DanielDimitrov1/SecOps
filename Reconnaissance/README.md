@@ -1,6 +1,6 @@
 ***This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.***  <br />
 
-
+***Below you can find my configurations related to security in AWS CloudFront ***
 
 # Passive reconnaissance <br />
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
@@ -102,3 +102,40 @@ Enables attackers to upload malicious files for remote execution.  <br />
 
 ## Metasploit  <br />
 [Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
+
+
+
+
+I enabled the protection and configured all the headers in CloudFront. Below is the description for every single header that I was working on and its benefits.
+**1. Strict-Transport-Security enforces HTTPS-only connections:**
+	•	Thwarts Man-in-the-Middle Attacks: Enforces encryption;
+	•	Secures Subdomains: Protects the whole domain ecosystem;
+	•	Preloaded by Browsers: Strengthens HTTPS adoption globally.
+ 
+**2. X-Content-Type-Options:**
+	•	Prevents Cross-Site Scripting (XSS): Blocks malicious files disguised as safe content;
+	•	Improves Security: Stops execution of unintended file types, especially JavaScript;
+	•	Standards Compliance: Ensures that browsers respect the server’s declared file type.
+     This implies that the server explicitly overrides default behavior, ensuring the policy applies regardless of user agent or intermediate proxies.
+ 
+**3. X-Frame-Options Policy:**
+	•	Prevents Clickjacking Attacks: Blocks malicious sites from embedding your content in invisible frames to trick users into interacting with it;
+	•	Restricts Framing to Trusted Sources: Ensures only same-origin contexts can embed your pages, maintaining content control;
+	•	Improves Security: Mitigates risks of unauthorized framing that could be used to exploit user interactions.
+ 
+**4.X-XSS-Protection Policy:**
+	•	Protects Against XSS Attacks: Blocks malicious scripts that could compromise user data or site functionality.
+	•	Prevents Content Rendering: Stops pages with detected XSS payloads from being displayed.
+	•	Simple Implementation: Easy way to add an extra layer of defense for older browsers.
+ 
+**5. Referrer-Policy: no-referrer:**
+Ensures that the policy is strictly applied, overriding defaults or intermediary settings that might otherwise allow referrer information to leak.
+	•	Maximized Privacy: Prevents sensitive information (e.g., URLs with tokens or user-specific data) from being shared with third-party sites;
+	•	Enhanced Security: Avoids exposing site structure or user navigation details to potentially malicious or untrusted endpoints;
+	•	Simplicity: Eliminates potential misconfiguration issues by refusing to send any referrer data.
+This policy is suitable for sites prioritizing user privacy and security, such as banking or healthcare portals.
+ 
+**6. Content-Security-Policy (CSP):**
+	•	Clickjacking Protection: By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.
+	•	Controlled Script Loading: The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.
+	•	Enhanced Security: With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.
