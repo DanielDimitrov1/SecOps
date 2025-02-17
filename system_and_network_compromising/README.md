@@ -96,9 +96,7 @@ Running the ARP spoof attack
 
 
 ##  How SSL Verification Stop MITM?
-▪To prevent man-in-the-middle (MITM) attacks by verifying SSL 
-certificates, you should take the following steps:
- ▪ Ensure that the SSL certificate is from a trusted certificate authority 
+To prevent man-in-the-middle (MITM) attacks by verifying SSL certificates, you should take the following steps:
+▪ Ensure that the SSL certificate is from a trusted certificate authority 
 (CA) and has not been revoked
- ▪Verify that the domain name in the certificate matches the domain 
-name of the website you are visiting
+▪ Verify that the domain name in the certificate matches the domain name of the website you are visiting
