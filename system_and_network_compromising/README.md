@@ -39,20 +39,39 @@ python torshammer.py -t 192.168.1.100 -r 100000 -T
 
 
 ##  Network Reconnaissance with Nmap
+[Cheatsheet Nmap](https://www.stationx.net/nmap-cheat-sheet/)
+```sh
 nmap -p 80 --script http-generator.nse
 nmap -p 443 --script=http-headers,http-title,http-generator 
 nmap --script="default and http-*" 
-
+```
 ##  Network Reconnaissance with Masscan
 [Cheatsheet Masscan/](https://cheatsheet.haax.fr/network/port-scanning/masscan_cheatsheet/)
 ```sh
 masscan -p80,443,8080,8443,81,4444,4443,8888 70.176.0.0/16
 ```
 ##  Network Reconnaissance with Netdiscover
+[Cheatsheet Netdiscover](https://neverendingsecurity.wordpress.com/2015/04/07/netdiscover-cheatsheet/)
 ```sh
-netdiscover
+sudo netdiscover
 ```
 ## Network Reconnaissance with Bettercap
+[Cheatsheet Bettercap](https://github.com/Lifka/hacking-resources/blob/main/session-hijacking-cheat-sheet.md)
 ```sh
 sudo bettercap
 ```
+
+# Nessus
+is a popular, commercial vulnerability scanner used for  identifying security threats in computer systems, such as missing patches, configuration issues, and susceptible software
+
+```sh
+wget 'https://www.tenable.com/downloads/api/v1/public/pages/nessus/ downloads/18394/download?i_agree_to_tenable_license_agreeme nt=true' -O Nessus_amd64.deb
+sudo apt install -f ./Nessus_amd64.deb
+sudo systemctl enable nessusd
+sudo systemctl start nessusd
+systemctl status nessusd
+```
+
+
+***1.After everything is done, you should land to the base UI***
+***2. If you can't create new scan, this is most likely because plugins are still configuring***
