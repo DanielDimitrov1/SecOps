@@ -1,20 +1,23 @@
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
 ## Common Passive Reconnaissance Techniques:
+
     ▪ **Scanning DNS (Identifying domain records and subdomains);**  <br />
     ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
-**Active reconnaissance** 
+**Active reconnaissance** <br />
+
 Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
 
 ## Common Active Reconnaissance Techniques:
+
     ▪ **Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
     ▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
     ▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., Gobuster, Dirb);  <br />
 
-# Passive Reconnaissance Tools
+# Passive Reconnaissance Tools <br />
 
 1. **Discover** is a collection of reconnaissance tools requiring API keys for full functionality.
-https://github.com/leebaird/discover
+https://github.com/leebaird/discover <br />
 
 ### Installing and Running Discover
 
@@ -45,10 +48,10 @@ While some tools like **Maltego** and **Discover** support both passive and acti
 
 https://hacktricks.boitatech.com.br/pentesting/pentesting-web 
 
- ▪ **Nessus** - for infrastructure scope  <br />
- ▪ **Searchsploit / Exploitdb** suitable for searching if a service is running at older version  <br />
+ ▪ **Nessus** - for infrastructure scope;  <br />
+ ▪ **Searchsploit / Exploitdb** suitable for searching if a service is running at older version;  <br />
  ▪ **SQLmap** - automatic SQL injection discovery and exploitation, **supports Burp Requests** https://github.com/sqlmapproject/sqlmap  <br /> 
- ▪ **BurpSuite** - discovering and exploiting web vulnerabilities, works as a http proxy, meaning it can capture requests and responses  <br />
+ ▪ **BurpSuite** - discovering and exploiting web vulnerabilities, works as a http proxy, meaning it can capture requests and responses.  <br />
 
 
 # Analyzing Vulnerabilities
