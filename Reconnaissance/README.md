@@ -1,6 +1,6 @@
 ***This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research.***  <br />
 
-***Below you can find my configurations related to security in AWS CloudFront ***
+***Below are my security-related configuration settings for AWS CloudFront.***
 
 # Passive reconnaissance <br />
 **Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
@@ -104,7 +104,7 @@ Enables attackers to upload malicious files for remote execution.  <br />
 [Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
 
 
-
+# The following are my CloudFront security configuration settings.
 
 I enabled the protection and configured all the headers in CloudFront. Below is the description for every single header that I was working on and its benefits.  <br />
 **1. Strict-Transport-Security enforces HTTPS-only connections:**  <br />
@@ -139,3 +139,5 @@ This policy is suitable for sites prioritizing user privacy and security, such a
 	•	Clickjacking Protection: By restricting framing to the same origin with frame-ancestors 'self', you prevent malicious websites from embedding your content within a hidden iframe and tricking users into performing unintended actions.  <br />
 	•	Controlled Script Loading: The script-src-elem directive allows only trusted sources to execute JavaScript, reducing the risk of cross-site scripting (XSS) attacks. Limiting script sources to 'self' and a trusted third-party domain like maps.googleapis.com minimizes the attack surface for malicious scripts.  <br />
 	•	Enhanced Security: With the combination of these rules, you are enforcing a more secure environment where the resources loaded and interactions allowed are carefully controlled.  <br />
+
+**You can find more about it in the ***cloudfront_security_headers_policy.tf*** file within this repo.**
