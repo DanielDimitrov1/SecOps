@@ -1,79 +1,113 @@
-**Passive reconnaissance** is the process of gathering information about the target  <br />
-    (Passive reconnaissance does not generate traffic on a client side).  <br />
-    ▪ **Scanning DNS;**  <br />
-    ▪ **Stalking Social Media** - faving a list of valid usernames / email addresses  (it can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
+Reconnaissance Techniques and Tools  
 
-**Active reconnaissance** is the process of gathering information about the target.  <br />
-    ▪ **Port scan** (nmap, masscan);  <br />
-    ▪ **Vulnerabilitiy scanning** (nessus, burpsuite);  <br />
-    ▪ **Directory brute-forcing** (gobuster, dirb);  <br />
+Passive Reconnaissance  
 
-# Passive Reconnaissance Tools
+Passive reconnaissance is the process of gathering information about a target without directly interacting with it. This method does not generate traffic on the target's infrastructure.  
 
-1. **Discover** https://github.com/leebaird/discover is combining more tools in one ( for uninterrupted function most of them requires an API key).
+Common Passive Reconnaissance Techniques:  
 
-### Installing and Running Discover
+DNS Scanning – Identifying domain records and subdomains.  
 
-```sh
-sudo git clone https://github.com/leebaird/discover
-cd /opt/discover/
-sudo ./discover.sh
-```
+Social Media Intelligence (SOCMINT) – Collecting publicly available information, such as usernames, email addresses, and job roles.  
 
-2. **Maltego** https://www.maltego.com/ - for data collection. It can perform BOTH passive and active scans  <br />
-3. **OSINT Framework** https://osintframework.com/ It can perform BOTH passive and active scans  <br />
+This can lead to attacks like password spraying, phishing, and privilege escalation.  
 
+Active Reconnaissance  
 
-# Active Reconnaissance Techniques 
-▪ **Port Scanning;**  <br />
-▪ **Service Enumeration** (can be done with nc or specific services like BurpSuite);  <br />
+Active reconnaissance involves directly interacting with the target to gather information, which may leave traces in logs.  
 
+Common Active Reconnaissance Techniques:  
 
-# Active Reconnaissance Tools
-As I mentioned earlier, here we can use the tools like **Maltego** and **Discover** too because they have the capability for both kinds of reconnaissance  <br />
-▪ **Nmap;**  <br />
-▪ **Netcat (nc);**  <br />
-▪ **Nikto** (A web application scanner, such as: backup files, basic misconfigurations, etc).;  <br />
-▪ **Gobuster / dirb** (Tools for directory brute forcing, scaning for hidden directories and files);  <br />
+Port Scanning – Identifying open ports and services (e.g., nmap, masscan).  
 
+Vulnerability Scanning – Assessing security weaknesses (e.g., Nessus, BurpSuite).  
 
-# Finding Vulnerabilities Tools and Techniques
+Directory Brute-Forcing – Enumerating hidden files and directories (e.g., Gobuster, Dirb).  
 
-https://hacktricks.boitatech.com.br/pentesting/pentesting-web 
+---  
 
- ▪ **Nessus** - for infrastructure scope  <br />
- ▪ **Searchsploit / Exploitdb** suitable for searching if a service is running at older version  <br />
- ▪ **SQLmap** - automatic SQL injection discovery and exploitation, **supports Burp Requests** https://github.com/sqlmapproject/sqlmap  <br /> 
- ▪ **BurpSuite** - discovering and exploiting web vulnerabilities, works as a http proxy, meaning it can capture requests and responses  <br />
+Passive Reconnaissance Tools  
 
+1. Discover  
 
-# Analyzing Vulnerabilities
+Discover is a collection of reconnaissance tools, requiring API keys for full functionality.  
 
-**1. SQL Injection**  - allows user to enter within the database engine, corrupting and modifying queries  <br />
-    Lab: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data   <br />
-**2. XSS**  - allows user to inject and execute custom javascript  <br />
-    A simple js payload to fuzz all potential parameters and fields: "<script>alert(‘1’);</script>"  <br /> 
-    More details at: https://github.com/payloadbox/xss-payload-list <br /> 
-    Lab: https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded  <br />
-**3. OS Command Injection** - allows user to inject custom OS commands  <br />
-    More details at: https://github.com/payloadbox/command-injection-payload-list  <br />
-    Lab: https://portswigger.net/web-security/os-command-injection/lab-simple  <br />
-**4. Directory Traversal**  - allows user to read local files stored on the operational system (OS)  <br />
-    Lab: https://portswigger.net/web-security/file-path-traversal/lab-simple   <br />
-**5.  Access Control Vulnerabilities** - user to access and work with resources, by bypassing access control restrictions  <br />
-    Lab: https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality   <br />
-**6. File Upload Vulnerabilities** - allows an attacker to upload and execute unknown files and executing C2  <br />
-    Lab: https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload  <br />
+Installation:  
 
+sudo git clone https://github.com/leebaird/discover  <br />
+cd /opt/discover/  <br />
+sudo ./discover.sh  <br />
+```  <br />
 
-USEFUL SOLUTIONS:
+### 2. Maltego  <br />
+[Maltego](https://www.maltego.com/) is a powerful data collection tool supporting both passive and active reconnaissance.  <br />
 
+### 3. OSINT Framework  <br />
+[OSINT Framework](https://osintframework.com/) provides an extensive list of tools for open-source intelligence gathering.  <br />
 
-# Privilege Escalation
+---  <br />
+## Active Reconnaissance Tools  <br />
 
-▪ **Linpeas.sh** https://linpeas.sh/  <br />
-▪ **GTFObins** https://gtfobins.github.io/  (You can find such binaries misconfigured to allow privilege escalation)  <br />
+While some tools like **Maltego** and **Discover** support both passive and active reconnaissance, additional specialized tools include:  <br />
 
-# Metasploit
+- **Nmap** – Network discovery and security auditing.  <br />
+- **Netcat (nc)** – Simple yet powerful networking utility for service enumeration.  <br />
+- **Nikto** – Web vulnerability scanner for identifying misconfigurations and security flaws.  <br />
+- **Gobuster/Dirb** – Brute-force enumeration tools for discovering hidden directories and files.  <br />
 
-https://www.metasploit.com/ 
+---  <br />
+## Vulnerability Discovery Tools and Techniques  <br />
+
+### 1. Nessus  <br />
+[Nessus](https://www.tenable.com/products/nessus) is widely used for vulnerability assessments, particularly in infrastructure security.  <br />
+
+### 2. SearchSploit / Exploit-DB  <br />
+[Exploit-DB](https://www.exploit-db.com/) enables users to search for known vulnerabilities in outdated services.  <br />
+
+### 3. SQLmap  <br />
+[SQLmap](https://github.com/sqlmapproject/sqlmap) automates SQL injection discovery and exploitation. It supports direct integration with BurpSuite for testing HTTP requests.  <br />
+
+### 4. BurpSuite  <br />
+[BurpSuite](https://portswigger.net/burp) is a web security testing tool that acts as an HTTP proxy, allowing interception and modification of web traffic.  <br />
+
+---  <br />
+## Analyzing Vulnerabilities  <br />
+
+### 1. SQL Injection  <br />
+Allows attackers to manipulate database queries.  <br />
+- Lab: [PortSwigger SQL Injection](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)  <br />
+
+### 2. Cross-Site Scripting (XSS)  <br />
+Enables the execution of arbitrary JavaScript in a victim’s browser.  <br />
+- Simple payload: `<script>alert(‘1’);</script>`  <br />
+- Lab: [XSS Vulnerability](https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded)  <br />
+- More details: [XSS Payload List](https://github.com/payloadbox/xss-payload-list)  <br />
+
+### 3. OS Command Injection  <br />
+Allows attackers to execute arbitrary system commands.  <br />
+- More details: [Command Injection Payloads](https://github.com/payloadbox/command-injection-payload-list)  <br />
+- Lab: [OS Command Injection](https://portswigger.net/web-security/os-command-injection/lab-simple)  <br />
+
+### 4. Directory Traversal  <br />
+Grants unauthorized access to local files on a system.  <br />
+- Lab: [Path Traversal](https://portswigger.net/web-security/file-path-traversal/lab-simple)  <br />
+
+### 5. Access Control Vulnerabilities  <br />
+Allows unauthorized access to restricted resources.  <br />
+- Lab: [Bypassing Access Controls](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality)  <br />
+
+### 6. File Upload Vulnerabilities  <br />
+Enables attackers to upload malicious files for remote execution.  <br />
+- Lab: [File Upload RCE](https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload)  <br />
+
+---  <br />
+## Privilege Escalation  <br />
+- **LinPEAS** – [Privilege escalation auditing script](https://linpeas.sh/).  <br />
+- **GTFOBins** – [List of Unix binaries that allow privilege escalation](https://gtfobins.github.io/).  <br />
+
+---  <br />
+## Metasploit  <br />
+[Metasploit Framework](https://www.metasploit.com/) is an advanced penetration testing platform for developing, testing, and executing exploits.  <br />
+
+---  <br />
+This guide provides an overview of reconnaissance techniques and tools used for penetration testing and security research. Always ensure ethical and legal compliance when using these methods.  <br />
