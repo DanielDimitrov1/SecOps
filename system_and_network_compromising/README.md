@@ -48,9 +48,9 @@ nmap --script="default and http-*"
 
 masscan -p80,443,8080,8443,81,4444,4443,8888 70.176.0.0/16
 
-##  Network Reconnaissance with Netdiscover
+###  Network Reconnaissance with Netdiscover
 
 netdiscover
 
-## Network Reconnaissance with Bettercap
+### Network Reconnaissance with Bettercap
 sudo bettercap
