@@ -1,16 +1,20 @@
-**Passive reconnaissance** is the process of gathering information about the target  <br />
-    (Passive reconnaissance does not generate traffic on a client side).  <br />
-    ▪ **Scanning DNS;**  <br />
-    ▪ **Stalking Social Media** - faving a list of valid usernames / email addresses  (it can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
+**Passive reconnaissance** is a process of gathering information about the target without directly interacting with it.  <br />
+## Common Passive Reconnaissance Techniques:
+    ▪ **Scanning DNS (Identifying domain records and subdomains);**  <br />
+    ▪ **Social Media Intelligence (SOCMINT)** - Collecting publicly available information, such as usernames, email addresses, and job roles (This can lead to: Password spraying, Phishing, Privilege Escalation, etc);  <br />
 
-**Active reconnaissance** is the process of gathering information about the target.  <br />
-    ▪ **Port scan** (nmap, masscan);  <br />
-    ▪ **Vulnerabilitiy scanning** (nessus, burpsuite);  <br />
-    ▪ **Directory brute-forcing** (gobuster, dirb);  <br />
+**Active reconnaissance** 
+Active reconnaissance involves direct interaction with the target to gather information, often leaving traces in logs.  <br />
+
+## Common Active Reconnaissance Techniques:
+    ▪ **Port scan** – Identifying open ports and services (e.g., nmap, masscan);  <br />
+    ▪ **Vulnerabilitiy scanning** – Assessing security weaknesses (e.g., Nessus, BurpSuite);  <br />
+    ▪ **Directory brute-forcing** – Enumerating hidden files and directories (e.g., Gobuster, Dirb);  <br />
 
 # Passive Reconnaissance Tools
 
-1. **Discover** https://github.com/leebaird/discover is combining more tools in one ( for uninterrupted function most of them requires an API key).
+1. **Discover** is a collection of reconnaissance tools requiring API keys for full functionality.
+https://github.com/leebaird/discover
 
 ### Installing and Running Discover
 
@@ -20,8 +24,8 @@ cd /opt/discover/
 sudo ./discover.sh
 ```
 
-2. **Maltego** https://www.maltego.com/ - for data collection. It can perform BOTH passive and active scans  <br />
-3. **OSINT Framework** https://osintframework.com/ It can perform BOTH passive and active scans  <br />
+2. **Maltego** https://www.maltego.com/ - is a powerful data collection tool supporting both passive and active reconnaissance  <br />
+3. **OSINT Framework** https://osintframework.com/ - provides an extensive list of tools for open-source intelligence gathering <br />
 
 
 # Active Reconnaissance Techniques 
@@ -30,14 +34,14 @@ sudo ./discover.sh
 
 
 # Active Reconnaissance Tools
-As I mentioned earlier, here we can use the tools like **Maltego** and **Discover** too because they have the capability for both kinds of reconnaissance  <br />
-▪ **Nmap;**  <br />
-▪ **Netcat (nc);**  <br />
-▪ **Nikto** (A web application scanner, such as: backup files, basic misconfigurations, etc).;  <br />
-▪ **Gobuster / dirb** (Tools for directory brute forcing, scaning for hidden directories and files);  <br />
+While some tools like **Maltego** and **Discover** support both passive and active reconnaissance, additional specialized tools include: <br />
+▪ **Nmap;**  - – Network discovery and security auditing; <br />
+▪ **Netcat (nc);** – Simple yet powerful networking utility for service enumeration <br />
+▪ **Nikto** – Web vulnerability scanner for identifying misconfigurations and security flaws;  <br />
+▪ **Gobuster / dirb** – Brute-force enumeration tools for discovering hidden directories and files;  <br />
 
 
-# Finding Vulnerabilities Tools and Techniques
+# Vulnerability Discovery Tools and Techniques 
 
 https://hacktricks.boitatech.com.br/pentesting/pentesting-web 
 
