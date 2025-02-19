@@ -74,6 +74,16 @@ python3 follina.py -r 9999
 - **WiFiPhisher**: [https://github.com/wifiphisher/wifiphisher](https://github.com/wifiphisher/wifiphisher)
 - **WiFi Exploitation Framework**: [https://github.com/D3Ext/WEF](https://github.com/D3Ext/WEF)
 
+
+```sh 
+python listener.py
+```
+
+**More details at:**: https://www.youtube.com/watch?v=A8DkVDQW1-w
+
+*Technical Side of Phishing Attacks is Scary Easy to Replicate* <br />
+
+
 ## Social Engineering & Phishing
 - **SET (Social Engineer Toolkit)**: [https://github.com/trustedsec/social-engineer-toolkit](https://github.com/trustedsec/social-engineer-toolkit)
 ```sh
@@ -108,6 +118,13 @@ msf6 exploit(multi/http/drupal_drupageddon) > show options
 msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ```
 
+# Brute Forcing Attacks   <br />
+**Example software for performing the attack:**   <br />
+▪ **THC-Hydra:** https://github.com/vanhauser-thc/thchydra   <br />
+▪ **Burp Intruder:** https://portswigger.net/burp/pro   <br />
+▪ **Medusa:** https://github.com/jmk-foofus/medusa   <br />
+
+
 ## Security Information and Event Management (SIEM)
 ### Enumerating Active Reverse Shells
 ```sh
@@ -120,14 +137,28 @@ ps -aef --forest
 - **Kali Linux**: [https://www.kali.org](https://www.kali.org)
 - **Parrot OS**: [https://www.parrotsec.org](https://www.parrotsec.org)
 - **Black Arch**: [https://blackarch.org](https://blackarch.org)
+- **CommandoVM:** [https://github.com/mandiant/commando-vm](https://github.com/mandiant/commando-vm)
+- **Nessus:** [https://www.tenable.com/products/nessus](https://www.tenable.com/products/nessus)
+- **Nmap:** [https://nmap.org](https://nmap.org)
+- **BurpSuite:** [https://portswigger.net/burp](https://portswigger.net/burp)
+- **Searchsploit:** [https://www.exploit-db.com/searchsploit](https://www.exploit-db.com/searchsploit)
+
 
 ## Privilege Escalation
 ### Local Enumeration for Escalation Paths
 - **LinPEAS**: [https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
+**More details at:** https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+
+**On github:** https://github.com/juliocesarfort/public-pentesting-reports
+
 ## Hands-on Cybersecurity Training
 - **TryHackMe**: [https://tryhackme.com/](https://tryhackme.com/)
 - **HackTheBox**: [https://www.hackthebox.com/](https://www.hackthebox.com/)
+- **Vulnhub**: [https://www.vulnhub.com/](https://www.vulnhub.com/)
+
+**Use ATT&CK Navigator:** <br />
+https://mitre-attack.github.io/attack-navigator/ to map a sample TTP   
 
 ## Wordlist Setup for Attacks
 ```sh
