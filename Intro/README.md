@@ -35,7 +35,7 @@ sudo -l
 
 ## DataBase Vulnerability Research
 - **Exploit Database**: [https://www.exploit-db.com/](https://www.exploit-db.com/)
-- **Common Vulnerabilities (CVE Database)**: [https://www.cve.org/](https://www.cve.org/)
+- **Common Vulnerabilities (CVE Database)**: [https://www.cve.org/](https://www.cve.org/)   && https://www.cvedetails.com 
 - **National Vulnerability Database**: [https://nvd.nist.gov/](https://nvd.nist.gov/)
 
 ## CMS Vulnerabilities
@@ -50,9 +50,10 @@ msf6 exploit(multi/http/drupal_drupageddon) > exploit
 - Ensure security patches are applied to the entire system.
 - Review configurations to prevent misconfigurations leading to vulnerabilities.
 
-## Password Cracking & Hash Recovery
+## Password Cracking (brute-force) & Hash Recovery
 - **Hydra**: [https://github.com/vanhauser-thc/thc-hydra](https://github.com/vanhauser-thc/thc-hydra)
 - **Hashcat**: [https://hashcat.net/wiki/](https://hashcat.net/wiki/)
+  - ***Example:*** https://hashcat.net/wiki/doku.php?id=example_hashes  
 - **CrackStation**: [https://crackstation.net](https://crackstation.net)
 
 ## Credential Capture with Responder
