@@ -1,0 +1,45 @@
+{
+  "Name": "LimitingTheRequests",
+  "Priority": 3,
+  "Statement": {
+    "RateBasedStatement": {
+      "Limit": 120,
+      "EvaluationWindowSec": 60,
+      "AggregateKeyType": "IP",
+      "ScopeDownStatement": {
+        "ByteMatchStatement": {
+          "SearchString": "https://DOMAIN_NAME.com/",
+          "FieldToMatch": {
+            "UriPath": {}
+          },
+          "TextTransformations": [
+            {
+              "Priority": 0,
+              "Type": "NONE"
+            }
+          ],
+          "PositionalConstraint": "STARTS_WITH"
+        }
+      }
+    }
+  },
+  "Action": {
+    "Block": {
+      "CustomResponse": {
+        "ResponseCode": 403,
+        "CustomResponseBodyKey": "Limiting-IP-Requests",
+        "ResponseHeaders": [
+          {
+            "Name": "Limiting-IP-Requests",
+            "Value": "Detected over 120 requests within a 60-second interval. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
+          }
+        ]
+      }
+    }
+  },
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "LimitingTheRequests"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",
+  "Priority": 1,
+  "Statement": {
+    "ManagedRuleGroupStatement": {
+      "VendorName": "AWS",
+      "Name": "AWSManagedRulesKnownBadInputsRuleSet"
+    }
+  },
+  "OverrideAction": {
+    "None": {}
+  },
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "AWS-AWSManagedRulesKnownBadInputsRuleSet"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Name": "Base-Rate-Limit",
+  "Priority": 3,
+  "Statement": {
+    "RateBasedStatement": {
+      "Limit": 1000,
+      "EvaluationWindowSec": 60,
+      "AggregateKeyType": "IP"
+    }
+  },
+  "Action": {
+    "Block": {
+      "CustomResponse": {
+        "ResponseCode": 403,
+        "CustomResponseBodyKey": "Base-Rate-Limit1",
+        "ResponseHeaders": [
+            {
+              "Name": "Base-Rate-Limit1",
+              "Value": "Detected over 1000 HTTP requests within a 60-second interval. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
+            }
+          ]
+        }
+      }
+    },        
+ 
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "Base-Rate-Limit"
+  }
+}
