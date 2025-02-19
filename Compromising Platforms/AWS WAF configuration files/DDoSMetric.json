@@ -1,5 +1,5 @@
 {
-  "Name": "Base-Rate-Limit",
+  "Name": "DDoSMetric",
   "Priority": 3,
   "Statement": {
     "RateBasedStatement": {
@@ -12,10 +12,10 @@
     "Block": {
       "CustomResponse": {
         "ResponseCode": 403,
-        "CustomResponseBodyKey": "Base-Rate-Limit1",
+        "CustomResponseBodyKey": "DDoSMetric",
         "ResponseHeaders": [
             {
-              "Name": "Base-Rate-Limit1",
+              "Name": "DDoSMetric",
               "Value": "Detected over 1000 HTTP requests within a 60-second interval. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
             }
           ]
@@ -26,6 +26,6 @@
   "VisibilityConfig": {
     "SampledRequestsEnabled": true,
     "CloudWatchMetricsEnabled": true,
-    "MetricName": "Base-Rate-Limit"
+    "MetricName": "DDoSMetric"
   }
 }

@@ -1,0 +1,30 @@
+{
+    "Name": "BotRule",
+    "Priority": 1,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesBotControlRuleSet"
+      }
+    },
+    "Action": {
+      "Block": {
+        "CustomResponse": {
+          "ResponseCode": 403,
+          "CustomResponseBodyKey": "BotRule",
+          "ResponseHeaders": [
+              {
+                "Name": "BotRule",
+                "Value": "Detected suspicious action related to Bots attack. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
+              }
+            ]
+          }
+        }
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "BotProtection"
+    }
+  }
+  

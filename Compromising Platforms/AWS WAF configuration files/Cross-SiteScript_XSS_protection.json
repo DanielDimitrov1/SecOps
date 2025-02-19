@@ -1,0 +1,29 @@
+{
+  "Name": "XSSRule",
+  "Priority": 1,
+  "Statement": {
+    "ManagedRuleGroupStatement": {
+      "VendorName": "AWS",
+      "Name": "AWSManagedRulesKnownBadInputsRuleSet"
+    }
+  },
+  "Action": {
+    "Block": {
+      "CustomResponse": {
+        "ResponseCode": 403,
+        "CustomResponseBodyKey": "XSSRule",
+        "ResponseHeaders": [
+            {
+              "Name": "XSSRule",
+              "Value": "Detected suspicious action related to XSS. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
+            }
+          ]
+        }
+      }
+  },
+  "VisibilityConfig": {
+    "SampledRequestsEnabled": true,
+    "CloudWatchMetricsEnabled": true,
+    "MetricName": "XSSProtection"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "Name": "SQLInjectionRule",
+    "Priority": 1,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesSQLInjectionRuleSet"
+      }
+    },
+    "Action": {
+      "Block": {
+        "CustomResponse": {
+          "ResponseCode": 403,
+          "CustomResponseBodyKey": "SQLInjectionRule",
+          "ResponseHeaders": [
+              {
+                "Name": "SQLMetric",
+                "Value": "Detected suspicious action related to SQL injection. This behavior is indicative of a potential cyber attack. This incident will undergo thorough investigation and appropriate countermeasures will be implemented!"
+              }
+            ]
+          }
+        }
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "SQLInjectionProtection"
+    }
+  }
+  
