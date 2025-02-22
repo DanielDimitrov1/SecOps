@@ -5,6 +5,9 @@
 
 ***To improve application security, I have implemented security measures in AWS WAF, following best practices and tailoring them to the specific needs of the project. Additional details can be found in the [AWS WAF Configuration files](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/AWS%20WAF%20configuration%20files)***
 
+
+***[The BruteForce directory](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/Brute-Force) contains a Python script designed for ethical security research and learning purposes. This script automates login attempts using a list of usernames and passwords to test system security and identify weak credentials.***
+
 ---
 
 ## Web Enumeration Techniques
