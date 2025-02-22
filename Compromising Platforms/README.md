@@ -3,7 +3,7 @@
 ***This repo is a very highlight collection of tools, techniques, and scanners I've used in my projects to improve security. It covers network reconnaissance, penetration testing, and security assessments. Use these tools responsibly and within legal boundaries.*** <br />
 
 
-***To improve application security, I have implemented security measures in AWS WAF, following best practices and tailoring them to the specific needs of the project. Additional details can be found at the bottom of this file and in the [AWS WAF Configuration files](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/AWS%20WAF%20configuration%20files)***
+***To improve application security, I have implemented security measures in AWS WAF, following best practices and tailoring them to the specific needs of the project. Additional details can be found in the [AWS WAF Configuration files](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/AWS%20WAF%20configuration%20files)***
 
 ---
 
@@ -133,13 +133,3 @@ C2 frameworks are used to control compromised systems. Some well-known framework
 - **Mythic** – Open-source, flexible, and extensible C2 platform 
 
 ---
-
-# WAF Implementation
-
-- **AWS WAF & Web ACLs:** Configured Web ACLs to protect against common web vulnerabilities.
-- **Enhanced Protection Rules:** Added and applied rules for SQL injection, XSS, and DDoS mitigation.
-- **Integration Across Services:** Attached security policies to API Gateway, ALB, and Cognito User Pool.
-- **Logging & Monitoring:** Enabled logging to improve threat detection and analysis.
-- **Custom Response Handling:** Defined structured response messages for security-related actions.
-
-**These enhancements help ensure better security, better monitoring, and improved resilience against potential attacks.**
