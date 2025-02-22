@@ -3,7 +3,7 @@
 ***This repo is a very highlight collection of tools, techniques, and scanners I've used in my projects to improve security. It covers network reconnaissance, penetration testing, and security assessments. Use these tools responsibly and within legal boundaries.*** <br />
 
 
-***To improve application security, I have implemented security measures in AWS WAF, following best practices and tailoring them to the specific needs of the project. [AWS WAF Configuration files](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/AWS%20WAF%20configuration%20files)***
+***To improve application security, I have implemented security measures in AWS WAF, following best practices and tailoring them to the specific needs of the project. Additional details can be found at the bottom of this file and in the [AWS WAF Configuration files](https://github.com/DanielDimitrov1/SecOps/tree/main/Compromising%20Platforms/AWS%20WAF%20configuration%20files)***
 
 ---
 
